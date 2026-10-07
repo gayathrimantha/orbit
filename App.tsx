@@ -8,6 +8,7 @@ import { EditorScreen } from './src/screens/EditorScreen';
 import { HomeScreen } from './src/screens/HomeScreen';
 import { TimerScreen } from './src/screens/TimerScreen';
 import { useStore } from './src/store';
+import { startWatchSync } from './src/watch';
 import { color } from './src/theme';
 
 const Stack = createNativeStackNavigator<RootStack>();
@@ -24,6 +25,8 @@ export default function App() {
   useEffect(() => {
     hydrate();
   }, [hydrate]);
+
+  useEffect(() => (ready ? startWatchSync() : undefined), [ready]);
 
   return (
     <SafeAreaProvider>

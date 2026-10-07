@@ -14,6 +14,9 @@ survives the app being killed mid-session.
   <img src="docs/screens/editor.png" width="24%" alt="Routine editor with live preview">
   <img src="docs/screens/finished.png" width="24%" alt="Session summary">
 </p>
+<p>
+  <img src="docs/screens/watch-work.png" width="30%" alt="Apple Watch during a work phase">
+</p>
 
 ## Status
 
@@ -22,7 +25,7 @@ survives the app being killed mid-session.
 | Timer engine | Done, fully tested |
 | iOS and Android app | Done: routines, editor, live timer, weekly summary |
 | Engine in Swift and Kotlin | Done, verified against the TypeScript engine |
-| Apple Watch (SwiftUI) | In progress |
+| Apple Watch (SwiftUI) | Live countdown, controls, phase haptics. Phone to watch sync verified on simulator |
 | Wear OS (Compose) | In progress |
 | Background alerts | Planned: scheduled local notifications at phase changes |
 
@@ -113,6 +116,7 @@ src/
   theme.ts       Design tokens: colour per phase, spacing, type scale
 fixtures/        Shared engine test cases, generated from the TypeScript engine
 native/swift/    Swift engine package (used by the watchOS app)
+watch/           Apple Watch app (SwiftUI); scripts/add-watch-target.rb wires it into Xcode
 android/engine/  Kotlin engine module (used by the Wear OS app)
 e2e/             Maestro end-to-end flows
 ios/             iOS app (and Apple Watch target)

@@ -33,7 +33,11 @@ interface State {
   saveRoutine: (r: Routine) => void;
   deleteRoutine: (id: string) => void;
   startSession: (r: Routine) => void;
-  control: (action: 'pause' | 'resume' | 'skip' | 'back' | 'stop') => void;
+  /** `at` lets a control tapped on the watch apply at the moment it was tapped. */
+  control: (
+    action: 'pause' | 'resume' | 'skip' | 'back' | 'stop',
+    at?: number,
+  ) => void;
   tick: (now: number) => void;
   dismissSession: () => void;
 }
@@ -152,12 +156,11 @@ export const useStore = create<State>((set, get) => {
 
     startSession: r => commit(start(r, Date.now())),
 
-    control: action => {
+    control: (action, at = Date.now()) => {
       const s = get().session;
       if (!s) return;
-      const now = Date.now();
       const fn = { pause, resume, skip, back, stop }[action];
-      commit(fn(s, now));
+      commit(fn(s, at));
     },
 
     tick: now => {
