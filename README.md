@@ -8,12 +8,20 @@ work) share one engine. Start on the phone, glance at the watch, pause from
 either. The timer is computed from the clock, so it never drifts, and it
 survives the app being killed mid-session.
 
+<p>
+  <img src="docs/screens/home.png" width="24%" alt="Home: workouts and focus routines">
+  <img src="docs/screens/timer-work.png" width="24%" alt="Timer during a work phase">
+  <img src="docs/screens/editor.png" width="24%" alt="Routine editor with live preview">
+  <img src="docs/screens/finished.png" width="24%" alt="Session summary">
+</p>
+
 ## Status
 
 | Surface | State |
 |---|---|
 | Timer engine | Done, fully tested |
 | iOS and Android app | Done: routines, editor, live timer, weekly summary |
+| Engine in Swift and Kotlin | Done, verified against the TypeScript engine |
 | Apple Watch (SwiftUI) | In progress |
 | Wear OS (Compose) | In progress |
 | Background alerts | Planned: scheduled local notifications at phase changes |
@@ -69,6 +77,31 @@ Every operation is a pure `(session, now) => session` function, so the whole
 engine is tested without fake timers. See
 [`src/engine/__tests__`](src/engine/__tests__/engine.test.ts).
 
+### One engine, three languages, one test suite
+
+The phone runs the engine in TypeScript; the watches run it natively, in
+Swift on watchOS and Kotlin on Wear OS. Three implementations of the same
+logic will drift apart unless something stops them.
+
+[`scripts/gen-fixtures.ts`](scripts/gen-fixtures.ts) runs the TypeScript
+engine over a set of scenarios (pauses, skips, rewinds, early stops, odd
+durations) and records the exact snapshot at 14 instants each into
+[`fixtures/engine.json`](fixtures/engine.json). The TypeScript, Swift and
+Kotlin test suites all load that one file and must reproduce every snapshot
+field for field. A behaviour change in any engine fails CI on the others.
+
+```sh
+npm test                                  # TypeScript
+cd native/swift && swift test             # Swift (watchOS engine)
+cd android && ./gradlew :engine:test      # Kotlin (Wear OS engine)
+```
+
+### End-to-end
+
+[`e2e/tour.yaml`](e2e/tour.yaml) is a Maestro flow that drives the real app:
+start a routine, skip, pause, minimise, return, end early, check the summary
+and the weekly stats, open the editor. The screenshots above come from it.
+
 ## Project layout
 
 ```
@@ -78,6 +111,10 @@ src/
   components/    Ring, TimelineBar, Icon
   store.ts       Zustand store, persistence, history
   theme.ts       Design tokens: colour per phase, spacing, type scale
+fixtures/        Shared engine test cases, generated from the TypeScript engine
+native/swift/    Swift engine package (used by the watchOS app)
+android/engine/  Kotlin engine module (used by the Wear OS app)
+e2e/             Maestro end-to-end flows
 ios/             iOS app (and Apple Watch target)
 android/         Android app (and Wear OS module)
 ```

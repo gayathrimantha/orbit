@@ -9,6 +9,7 @@ import {
   View,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { Glow } from '../components/Glow';
 import { Icon, type IconName } from '../components/Icon';
 import { Ring } from '../components/Ring';
 import { TimelineBar } from '../components/TimelineBar';
@@ -22,15 +23,7 @@ import {
 import { useNow } from '../hooks/useNow';
 import type { ScreenProps } from '../navigation';
 import { activeMs, useStore } from '../store';
-import {
-  color,
-  phaseColor,
-  phaseLabel,
-  radius,
-  space,
-  tint,
-  type,
-} from '../theme';
+import { color, phaseColor, phaseLabel, radius, space, type } from '../theme';
 
 export function TimerScreen({ navigation }: ScreenProps<'Timer'>) {
   const session = useStore(s => s.session);
@@ -81,7 +74,7 @@ function Running({
         { paddingTop: insets.top, paddingBottom: insets.bottom + space.xl },
       ]}
     >
-      <View style={[styles.glow, { backgroundColor: tint(c, 0.1) }]} />
+      <Glow color={c} />
 
       <View style={styles.topBar}>
         <IconButton icon="chevron" label="Minimise" onPress={onClose} rotate />
@@ -298,14 +291,6 @@ const styles = StyleSheet.create({
   screen: { flex: 1, backgroundColor: color.bg },
   flex: { flex: 1 },
   pressed: { opacity: 0.7 },
-  glow: {
-    position: 'absolute',
-    top: -200,
-    left: -100,
-    right: -100,
-    height: 520,
-    borderRadius: 400,
-  },
   topBar: {
     flexDirection: 'row',
     alignItems: 'center',

@@ -129,7 +129,13 @@ export function EditorScreen({ navigation, route }: ScreenProps<'Editor'>) {
       style={styles.screen}
       behavior={Platform.OS === 'ios' ? 'padding' : undefined}
     >
-      <View style={[styles.topBar, { paddingTop: insets.top + space.sm }]}>
+      <View
+        style={[
+          styles.topBar,
+          // iOS presents this as a sheet below the status bar; Android doesn't.
+          { paddingTop: (Platform.OS === 'ios' ? 0 : insets.top) + space.lg },
+        ]}
+      >
         <Pressable
           hitSlop={8}
           accessibilityRole="button"

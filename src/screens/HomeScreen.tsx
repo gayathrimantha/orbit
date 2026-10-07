@@ -116,6 +116,8 @@ function ActiveBanner({ onPress }: { onPress: () => void }) {
   const c = phaseColor[snap.phase.kind];
   return (
     <Pressable
+      accessibilityRole="button"
+      accessibilityLabel={`Return to ${session.routine.name}`}
       onPress={onPress}
       style={({ pressed }) => [
         styles.banner,
@@ -163,18 +165,29 @@ function RoutineCard({
   const phases = useMemo(() => expand(routine.spec), [routine.spec]);
   const accent =
     phaseColor[routine.spec.type === 'interval' ? 'work' : 'focus'];
+  const total = formatDuration(totalDurationMs(phases));
+  // Edit and Start are sibling controls rather than nested ones: iOS folds a
+  // button inside another into a single element, hiding it from VoiceOver.
   return (
-    <Pressable
-      onPress={onPress}
-      style={({ pressed }) => [styles.card, pressed && styles.pressed]}
-    >
-      <View style={styles.cardTop}>
-        <View style={styles.flex}>
+    <View style={styles.card}>
+      <Pressable
+        accessibilityRole="button"
+        accessibilityLabel={`Edit ${routine.name}`}
+        accessibilityHint={`${describe(routine.spec)}, ${total}`}
+        onPress={onPress}
+        style={({ pressed }) => [
+          StyleSheet.absoluteFill,
+          styles.cardPress,
+          pressed && styles.cardPressed,
+        ]}
+      />
+      <View style={styles.cardTop} pointerEvents="box-none">
+        <View style={styles.flex} pointerEvents="none">
           <Text style={styles.cardTitle}>{routine.name}</Text>
           <Text style={styles.caption}>{describe(routine.spec)}</Text>
         </View>
-        <Text style={styles.duration}>
-          {formatDuration(totalDurationMs(phases))}
+        <Text style={styles.duration} pointerEvents="none">
+          {total}
         </Text>
         <Pressable
           accessibilityRole="button"
@@ -190,8 +203,10 @@ function RoutineCard({
           <Icon name="play" size={18} color={color.bg} />
         </Pressable>
       </View>
-      <TimelineBar phases={phases} height={5} />
-    </Pressable>
+      <View pointerEvents="none">
+        <TimelineBar phases={phases} height={5} />
+      </View>
+    </View>
   );
 }
 
@@ -219,6 +234,8 @@ const styles = StyleSheet.create({
     padding: space.lg,
     gap: space.lg,
   },
+  cardPress: { borderRadius: radius.md },
+  cardPressed: { backgroundColor: color.surfaceRaised },
   cardTop: { flexDirection: 'row', alignItems: 'center', gap: space.md },
   cardTitle: { ...type.title, color: color.text },
   duration: {

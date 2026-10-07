@@ -1,0 +1,33 @@
+appId: com.gayathrimantha.cadence
+---
+- launchApp:
+    clearState: true
+- assertVisible: "What are we doing?"
+- takeScreenshot: docs/screens/home
+- tapOn: "Start Tabata"
+- assertVisible: "WARM UP"
+- waitForAnimationToEnd
+- takeScreenshot: docs/screens/timer-warmup
+- tapOn: "Skip"
+- assertVisible: "WORK"
+- assertVisible: "Round 1 of 8"
+- takeScreenshot: docs/screens/timer-work
+- tapOn: "Pause"
+- assertVisible: "Resume"
+- tapOn: "Skip"
+- assertVisible: "REST"
+- tapOn: "Resume"
+- tapOn: "Minimise"
+- assertVisible: "Return to Tabata"
+- takeScreenshot: docs/screens/home-active
+- tapOn: "Return to Tabata"
+- tapOn: "End session"
+- tapOn: "End"
+- assertVisible: "ENDED EARLY"
+- takeScreenshot: docs/screens/finished
+- tapOn: "Done"
+- assertVisible: "This week: 1 session.*"
+- tapOn: "Edit HIIT 40 / 20"
+- assertVisible: "Edit routine"
+- takeScreenshot: docs/screens/editor
+- tapOn: "Close"

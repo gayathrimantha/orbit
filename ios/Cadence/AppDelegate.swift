@@ -5,10 +5,9 @@ import ReactAppDependencyProvider
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-  var window: UIWindow?
-
   var reactNativeDelegate: ReactNativeDelegate?
   var reactNativeFactory: RCTReactNativeFactory?
+  var launchOptions: [UIApplication.LaunchOptionsKey: Any]?
 
   func application(
     _ application: UIApplication,
@@ -20,16 +19,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     reactNativeDelegate = delegate
     reactNativeFactory = factory
+    self.launchOptions = launchOptions
+    return true
+  }
+}
 
-    window = UIWindow(frame: UIScreen.main.bounds)
+/// iOS 26+ traps at launch without UIScene adoption, and the React Native
+/// template is still app-delegate only, so the scene owns the window.
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+  var window: UIWindow?
 
+  func scene(
+    _ scene: UIScene,
+    willConnectTo session: UISceneSession,
+    options connectionOptions: UIScene.ConnectionOptions
+  ) {
+    guard
+      let windowScene = scene as? UIWindowScene,
+      let appDelegate = UIApplication.shared.delegate as? AppDelegate,
+      let factory = appDelegate.reactNativeFactory
+    else { return }
+
+    let window = UIWindow(windowScene: windowScene)
+    window.backgroundColor = UIColor(red: 0.043, green: 0.047, blue: 0.059, alpha: 1)
+    self.window = window
     factory.startReactNative(
       withModuleName: "Cadence",
       in: window,
-      launchOptions: launchOptions
+      launchOptions: appDelegate.launchOptions
     )
-
-    return true
   }
 }
 

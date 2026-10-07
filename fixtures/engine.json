@@ -1,0 +1,3227 @@
+[
+ {
+  "name": "tabata fresh",
+  "session": {
+   "routine": {
+    "id": "preset-tabata",
+    "name": "Tabata",
+    "spec": {
+     "type": "interval",
+     "warmupMs": 60000,
+     "workMs": 20000,
+     "restMs": 10000,
+     "rounds": 8,
+     "cooldownMs": 60000
+    }
+   },
+   "phases": [
+    {
+     "kind": "warmup",
+     "durationMs": 60000
+    },
+    {
+     "kind": "work",
+     "durationMs": 20000,
+     "round": 1
+    },
+    {
+     "kind": "rest",
+     "durationMs": 10000,
+     "round": 1
+    },
+    {
+     "kind": "work",
+     "durationMs": 20000,
+     "round": 2
+    },
+    {
+     "kind": "rest",
+     "durationMs": 10000,
+     "round": 2
+    },
+    {
+     "kind": "work",
+     "durationMs": 20000,
+     "round": 3
+    },
+    {
+     "kind": "rest",
+     "durationMs": 10000,
+     "round": 3
+    },
+    {
+     "kind": "work",
+     "durationMs": 20000,
+     "round": 4
+    },
+    {
+     "kind": "rest",
+     "durationMs": 10000,
+     "round": 4
+    },
+    {
+     "kind": "work",
+     "durationMs": 20000,
+     "round": 5
+    },
+    {
+     "kind": "rest",
+     "durationMs": 10000,
+     "round": 5
+    },
+    {
+     "kind": "work",
+     "durationMs": 20000,
+     "round": 6
+    },
+    {
+     "kind": "rest",
+     "durationMs": 10000,
+     "round": 6
+    },
+    {
+     "kind": "work",
+     "durationMs": 20000,
+     "round": 7
+    },
+    {
+     "kind": "rest",
+     "durationMs": 10000,
+     "round": 7
+    },
+    {
+     "kind": "work",
+     "durationMs": 20000,
+     "round": 8
+    },
+    {
+     "kind": "cooldown",
+     "durationMs": 60000
+    }
+   ],
+   "startedAt": 1700000000000,
+   "pausedAt": null,
+   "pausedTotalMs": 0,
+   "skippedMs": 0,
+   "finishedAt": null
+  },
+  "cases": [
+   {
+    "now": 1700000000000,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 60000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "phaseElapsedMs": 0,
+     "phaseRemainingMs": 60000,
+     "totalElapsedMs": 0,
+     "totalRemainingMs": 350000,
+     "phaseProgress": 0,
+     "totalProgress": 0
+    }
+   },
+   {
+    "now": 1700000000001,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 60000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "phaseElapsedMs": 1,
+     "phaseRemainingMs": 59999,
+     "totalElapsedMs": 1,
+     "totalRemainingMs": 349999,
+     "phaseProgress": 0.000016666666666666667,
+     "totalProgress": 0.0000028571428571428573
+    }
+   },
+   {
+    "now": 1700000000999,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 60000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "phaseElapsedMs": 999,
+     "phaseRemainingMs": 59001,
+     "totalElapsedMs": 999,
+     "totalRemainingMs": 349001,
+     "phaseProgress": 0.01665,
+     "totalProgress": 0.002854285714285714
+    }
+   },
+   {
+    "now": 1700000001000,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 60000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "phaseElapsedMs": 1000,
+     "phaseRemainingMs": 59000,
+     "totalElapsedMs": 1000,
+     "totalRemainingMs": 349000,
+     "phaseProgress": 0.016666666666666666,
+     "totalProgress": 0.002857142857142857
+    }
+   },
+   {
+    "now": 1700000059999,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 60000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "phaseElapsedMs": 59999,
+     "phaseRemainingMs": 1,
+     "totalElapsedMs": 59999,
+     "totalRemainingMs": 290001,
+     "phaseProgress": 0.9999833333333333,
+     "totalProgress": 0.1714257142857143
+    }
+   },
+   {
+    "now": 1700000060000,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 1,
+     "phase": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "next": {
+      "kind": "rest",
+      "durationMs": 10000,
+      "round": 1
+     },
+     "phaseElapsedMs": 0,
+     "phaseRemainingMs": 20000,
+     "totalElapsedMs": 60000,
+     "totalRemainingMs": 290000,
+     "phaseProgress": 0,
+     "totalProgress": 0.17142857142857143
+    }
+   },
+   {
+    "now": 1700000083500,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 2,
+     "phase": {
+      "kind": "rest",
+      "durationMs": 10000,
+      "round": 1
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 2
+     },
+     "phaseElapsedMs": 3500,
+     "phaseRemainingMs": 6500,
+     "totalElapsedMs": 83500,
+     "totalRemainingMs": 266500,
+     "phaseProgress": 0.35,
+     "totalProgress": 0.23857142857142857
+    }
+   },
+   {
+    "now": 1700000007333,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 60000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "phaseElapsedMs": 7333,
+     "phaseRemainingMs": 52667,
+     "totalElapsedMs": 7333,
+     "totalRemainingMs": 342667,
+     "phaseProgress": 0.12221666666666667,
+     "totalProgress": 0.020951428571428572
+    }
+   },
+   {
+    "now": 1700000014666,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 60000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "phaseElapsedMs": 14666,
+     "phaseRemainingMs": 45334,
+     "totalElapsedMs": 14666,
+     "totalRemainingMs": 335334,
+     "phaseProgress": 0.24443333333333334,
+     "totalProgress": 0.041902857142857144
+    }
+   },
+   {
+    "now": 1700000023249,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 60000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "phaseElapsedMs": 23249,
+     "phaseRemainingMs": 36751,
+     "totalElapsedMs": 23249,
+     "totalRemainingMs": 326751,
+     "phaseProgress": 0.38748333333333335,
+     "totalProgress": 0.06642571428571428
+    }
+   },
+   {
+    "now": 1700000023250,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 60000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "phaseElapsedMs": 23250,
+     "phaseRemainingMs": 36750,
+     "totalElapsedMs": 23250,
+     "totalRemainingMs": 326750,
+     "phaseProgress": 0.3875,
+     "totalProgress": 0.06642857142857143
+    }
+   },
+   {
+    "now": 1700001500000,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 16,
+     "phase": {
+      "kind": "cooldown",
+      "durationMs": 60000
+     },
+     "next": null,
+     "phaseElapsedMs": 60000,
+     "phaseRemainingMs": 0,
+     "totalElapsedMs": 350000,
+     "totalRemainingMs": 0,
+     "phaseProgress": 1,
+     "totalProgress": 1
+    }
+   },
+   {
+    "now": 1700003600000,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 16,
+     "phase": {
+      "kind": "cooldown",
+      "durationMs": 60000
+     },
+     "next": null,
+     "phaseElapsedMs": 60000,
+     "phaseRemainingMs": 0,
+     "totalElapsedMs": 350000,
+     "totalRemainingMs": 0,
+     "phaseProgress": 1,
+     "totalProgress": 1
+    }
+   },
+   {
+    "now": 1700099999999,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 16,
+     "phase": {
+      "kind": "cooldown",
+      "durationMs": 60000
+     },
+     "next": null,
+     "phaseElapsedMs": 60000,
+     "phaseRemainingMs": 0,
+     "totalElapsedMs": 350000,
+     "totalRemainingMs": 0,
+     "phaseProgress": 1,
+     "totalProgress": 1
+    }
+   }
+  ]
+ },
+ {
+  "name": "tabata paused then resumed",
+  "session": {
+   "routine": {
+    "id": "preset-tabata",
+    "name": "Tabata",
+    "spec": {
+     "type": "interval",
+     "warmupMs": 60000,
+     "workMs": 20000,
+     "restMs": 10000,
+     "rounds": 8,
+     "cooldownMs": 60000
+    }
+   },
+   "phases": [
+    {
+     "kind": "warmup",
+     "durationMs": 60000
+    },
+    {
+     "kind": "work",
+     "durationMs": 20000,
+     "round": 1
+    },
+    {
+     "kind": "rest",
+     "durationMs": 10000,
+     "round": 1
+    },
+    {
+     "kind": "work",
+     "durationMs": 20000,
+     "round": 2
+    },
+    {
+     "kind": "rest",
+     "durationMs": 10000,
+     "round": 2
+    },
+    {
+     "kind": "work",
+     "durationMs": 20000,
+     "round": 3
+    },
+    {
+     "kind": "rest",
+     "durationMs": 10000,
+     "round": 3
+    },
+    {
+     "kind": "work",
+     "durationMs": 20000,
+     "round": 4
+    },
+    {
+     "kind": "rest",
+     "durationMs": 10000,
+     "round": 4
+    },
+    {
+     "kind": "work",
+     "durationMs": 20000,
+     "round": 5
+    },
+    {
+     "kind": "rest",
+     "durationMs": 10000,
+     "round": 5
+    },
+    {
+     "kind": "work",
+     "durationMs": 20000,
+     "round": 6
+    },
+    {
+     "kind": "rest",
+     "durationMs": 10000,
+     "round": 6
+    },
+    {
+     "kind": "work",
+     "durationMs": 20000,
+     "round": 7
+    },
+    {
+     "kind": "rest",
+     "durationMs": 10000,
+     "round": 7
+    },
+    {
+     "kind": "work",
+     "durationMs": 20000,
+     "round": 8
+    },
+    {
+     "kind": "cooldown",
+     "durationMs": 60000
+    }
+   ],
+   "startedAt": 1700000000000,
+   "pausedAt": null,
+   "pausedTotalMs": 335000,
+   "skippedMs": 0,
+   "finishedAt": null
+  },
+  "cases": [
+   {
+    "now": 1700000000000,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 60000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "phaseElapsedMs": 0,
+     "phaseRemainingMs": 60000,
+     "totalElapsedMs": 0,
+     "totalRemainingMs": 350000,
+     "phaseProgress": 0,
+     "totalProgress": 0
+    }
+   },
+   {
+    "now": 1700000000001,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 60000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "phaseElapsedMs": 0,
+     "phaseRemainingMs": 60000,
+     "totalElapsedMs": 0,
+     "totalRemainingMs": 350000,
+     "phaseProgress": 0,
+     "totalProgress": 0
+    }
+   },
+   {
+    "now": 1700000000999,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 60000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "phaseElapsedMs": 0,
+     "phaseRemainingMs": 60000,
+     "totalElapsedMs": 0,
+     "totalRemainingMs": 350000,
+     "phaseProgress": 0,
+     "totalProgress": 0
+    }
+   },
+   {
+    "now": 1700000001000,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 60000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "phaseElapsedMs": 0,
+     "phaseRemainingMs": 60000,
+     "totalElapsedMs": 0,
+     "totalRemainingMs": 350000,
+     "phaseProgress": 0,
+     "totalProgress": 0
+    }
+   },
+   {
+    "now": 1700000059999,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 60000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "phaseElapsedMs": 0,
+     "phaseRemainingMs": 60000,
+     "totalElapsedMs": 0,
+     "totalRemainingMs": 350000,
+     "phaseProgress": 0,
+     "totalProgress": 0
+    }
+   },
+   {
+    "now": 1700000060000,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 60000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "phaseElapsedMs": 0,
+     "phaseRemainingMs": 60000,
+     "totalElapsedMs": 0,
+     "totalRemainingMs": 350000,
+     "phaseProgress": 0,
+     "totalProgress": 0
+    }
+   },
+   {
+    "now": 1700000083500,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 60000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "phaseElapsedMs": 0,
+     "phaseRemainingMs": 60000,
+     "totalElapsedMs": 0,
+     "totalRemainingMs": 350000,
+     "phaseProgress": 0,
+     "totalProgress": 0
+    }
+   },
+   {
+    "now": 1700000007333,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 60000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "phaseElapsedMs": 0,
+     "phaseRemainingMs": 60000,
+     "totalElapsedMs": 0,
+     "totalRemainingMs": 350000,
+     "phaseProgress": 0,
+     "totalProgress": 0
+    }
+   },
+   {
+    "now": 1700000014666,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 60000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "phaseElapsedMs": 0,
+     "phaseRemainingMs": 60000,
+     "totalElapsedMs": 0,
+     "totalRemainingMs": 350000,
+     "phaseProgress": 0,
+     "totalProgress": 0
+    }
+   },
+   {
+    "now": 1700000023249,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 60000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "phaseElapsedMs": 0,
+     "phaseRemainingMs": 60000,
+     "totalElapsedMs": 0,
+     "totalRemainingMs": 350000,
+     "phaseProgress": 0,
+     "totalProgress": 0
+    }
+   },
+   {
+    "now": 1700000023250,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 60000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "phaseElapsedMs": 0,
+     "phaseRemainingMs": 60000,
+     "totalElapsedMs": 0,
+     "totalRemainingMs": 350000,
+     "phaseProgress": 0,
+     "totalProgress": 0
+    }
+   },
+   {
+    "now": 1700001500000,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 16,
+     "phase": {
+      "kind": "cooldown",
+      "durationMs": 60000
+     },
+     "next": null,
+     "phaseElapsedMs": 60000,
+     "phaseRemainingMs": 0,
+     "totalElapsedMs": 350000,
+     "totalRemainingMs": 0,
+     "phaseProgress": 1,
+     "totalProgress": 1
+    }
+   },
+   {
+    "now": 1700003600000,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 16,
+     "phase": {
+      "kind": "cooldown",
+      "durationMs": 60000
+     },
+     "next": null,
+     "phaseElapsedMs": 60000,
+     "phaseRemainingMs": 0,
+     "totalElapsedMs": 350000,
+     "totalRemainingMs": 0,
+     "phaseProgress": 1,
+     "totalProgress": 1
+    }
+   },
+   {
+    "now": 1700099999999,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 16,
+     "phase": {
+      "kind": "cooldown",
+      "durationMs": 60000
+     },
+     "next": null,
+     "phaseElapsedMs": 60000,
+     "phaseRemainingMs": 0,
+     "totalElapsedMs": 350000,
+     "totalRemainingMs": 0,
+     "phaseProgress": 1,
+     "totalProgress": 1
+    }
+   }
+  ]
+ },
+ {
+  "name": "tabata paused",
+  "session": {
+   "routine": {
+    "id": "preset-tabata",
+    "name": "Tabata",
+    "spec": {
+     "type": "interval",
+     "warmupMs": 60000,
+     "workMs": 20000,
+     "restMs": 10000,
+     "rounds": 8,
+     "cooldownMs": 60000
+    }
+   },
+   "phases": [
+    {
+     "kind": "warmup",
+     "durationMs": 60000
+    },
+    {
+     "kind": "work",
+     "durationMs": 20000,
+     "round": 1
+    },
+    {
+     "kind": "rest",
+     "durationMs": 10000,
+     "round": 1
+    },
+    {
+     "kind": "work",
+     "durationMs": 20000,
+     "round": 2
+    },
+    {
+     "kind": "rest",
+     "durationMs": 10000,
+     "round": 2
+    },
+    {
+     "kind": "work",
+     "durationMs": 20000,
+     "round": 3
+    },
+    {
+     "kind": "rest",
+     "durationMs": 10000,
+     "round": 3
+    },
+    {
+     "kind": "work",
+     "durationMs": 20000,
+     "round": 4
+    },
+    {
+     "kind": "rest",
+     "durationMs": 10000,
+     "round": 4
+    },
+    {
+     "kind": "work",
+     "durationMs": 20000,
+     "round": 5
+    },
+    {
+     "kind": "rest",
+     "durationMs": 10000,
+     "round": 5
+    },
+    {
+     "kind": "work",
+     "durationMs": 20000,
+     "round": 6
+    },
+    {
+     "kind": "rest",
+     "durationMs": 10000,
+     "round": 6
+    },
+    {
+     "kind": "work",
+     "durationMs": 20000,
+     "round": 7
+    },
+    {
+     "kind": "rest",
+     "durationMs": 10000,
+     "round": 7
+    },
+    {
+     "kind": "work",
+     "durationMs": 20000,
+     "round": 8
+    },
+    {
+     "kind": "cooldown",
+     "durationMs": 60000
+    }
+   ],
+   "startedAt": 1700000000000,
+   "pausedAt": 1700000083000,
+   "pausedTotalMs": 0,
+   "skippedMs": 0,
+   "finishedAt": null
+  },
+  "cases": [
+   {
+    "now": 1700000000000,
+    "snapshot": {
+     "status": "paused",
+     "phaseIndex": 2,
+     "phase": {
+      "kind": "rest",
+      "durationMs": 10000,
+      "round": 1
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 2
+     },
+     "phaseElapsedMs": 3000,
+     "phaseRemainingMs": 7000,
+     "totalElapsedMs": 83000,
+     "totalRemainingMs": 267000,
+     "phaseProgress": 0.3,
+     "totalProgress": 0.23714285714285716
+    }
+   },
+   {
+    "now": 1700000000001,
+    "snapshot": {
+     "status": "paused",
+     "phaseIndex": 2,
+     "phase": {
+      "kind": "rest",
+      "durationMs": 10000,
+      "round": 1
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 2
+     },
+     "phaseElapsedMs": 3000,
+     "phaseRemainingMs": 7000,
+     "totalElapsedMs": 83000,
+     "totalRemainingMs": 267000,
+     "phaseProgress": 0.3,
+     "totalProgress": 0.23714285714285716
+    }
+   },
+   {
+    "now": 1700000000999,
+    "snapshot": {
+     "status": "paused",
+     "phaseIndex": 2,
+     "phase": {
+      "kind": "rest",
+      "durationMs": 10000,
+      "round": 1
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 2
+     },
+     "phaseElapsedMs": 3000,
+     "phaseRemainingMs": 7000,
+     "totalElapsedMs": 83000,
+     "totalRemainingMs": 267000,
+     "phaseProgress": 0.3,
+     "totalProgress": 0.23714285714285716
+    }
+   },
+   {
+    "now": 1700000001000,
+    "snapshot": {
+     "status": "paused",
+     "phaseIndex": 2,
+     "phase": {
+      "kind": "rest",
+      "durationMs": 10000,
+      "round": 1
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 2
+     },
+     "phaseElapsedMs": 3000,
+     "phaseRemainingMs": 7000,
+     "totalElapsedMs": 83000,
+     "totalRemainingMs": 267000,
+     "phaseProgress": 0.3,
+     "totalProgress": 0.23714285714285716
+    }
+   },
+   {
+    "now": 1700000059999,
+    "snapshot": {
+     "status": "paused",
+     "phaseIndex": 2,
+     "phase": {
+      "kind": "rest",
+      "durationMs": 10000,
+      "round": 1
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 2
+     },
+     "phaseElapsedMs": 3000,
+     "phaseRemainingMs": 7000,
+     "totalElapsedMs": 83000,
+     "totalRemainingMs": 267000,
+     "phaseProgress": 0.3,
+     "totalProgress": 0.23714285714285716
+    }
+   },
+   {
+    "now": 1700000060000,
+    "snapshot": {
+     "status": "paused",
+     "phaseIndex": 2,
+     "phase": {
+      "kind": "rest",
+      "durationMs": 10000,
+      "round": 1
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 2
+     },
+     "phaseElapsedMs": 3000,
+     "phaseRemainingMs": 7000,
+     "totalElapsedMs": 83000,
+     "totalRemainingMs": 267000,
+     "phaseProgress": 0.3,
+     "totalProgress": 0.23714285714285716
+    }
+   },
+   {
+    "now": 1700000083500,
+    "snapshot": {
+     "status": "paused",
+     "phaseIndex": 2,
+     "phase": {
+      "kind": "rest",
+      "durationMs": 10000,
+      "round": 1
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 2
+     },
+     "phaseElapsedMs": 3000,
+     "phaseRemainingMs": 7000,
+     "totalElapsedMs": 83000,
+     "totalRemainingMs": 267000,
+     "phaseProgress": 0.3,
+     "totalProgress": 0.23714285714285716
+    }
+   },
+   {
+    "now": 1700000007333,
+    "snapshot": {
+     "status": "paused",
+     "phaseIndex": 2,
+     "phase": {
+      "kind": "rest",
+      "durationMs": 10000,
+      "round": 1
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 2
+     },
+     "phaseElapsedMs": 3000,
+     "phaseRemainingMs": 7000,
+     "totalElapsedMs": 83000,
+     "totalRemainingMs": 267000,
+     "phaseProgress": 0.3,
+     "totalProgress": 0.23714285714285716
+    }
+   },
+   {
+    "now": 1700000014666,
+    "snapshot": {
+     "status": "paused",
+     "phaseIndex": 2,
+     "phase": {
+      "kind": "rest",
+      "durationMs": 10000,
+      "round": 1
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 2
+     },
+     "phaseElapsedMs": 3000,
+     "phaseRemainingMs": 7000,
+     "totalElapsedMs": 83000,
+     "totalRemainingMs": 267000,
+     "phaseProgress": 0.3,
+     "totalProgress": 0.23714285714285716
+    }
+   },
+   {
+    "now": 1700000023249,
+    "snapshot": {
+     "status": "paused",
+     "phaseIndex": 2,
+     "phase": {
+      "kind": "rest",
+      "durationMs": 10000,
+      "round": 1
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 2
+     },
+     "phaseElapsedMs": 3000,
+     "phaseRemainingMs": 7000,
+     "totalElapsedMs": 83000,
+     "totalRemainingMs": 267000,
+     "phaseProgress": 0.3,
+     "totalProgress": 0.23714285714285716
+    }
+   },
+   {
+    "now": 1700000023250,
+    "snapshot": {
+     "status": "paused",
+     "phaseIndex": 2,
+     "phase": {
+      "kind": "rest",
+      "durationMs": 10000,
+      "round": 1
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 2
+     },
+     "phaseElapsedMs": 3000,
+     "phaseRemainingMs": 7000,
+     "totalElapsedMs": 83000,
+     "totalRemainingMs": 267000,
+     "phaseProgress": 0.3,
+     "totalProgress": 0.23714285714285716
+    }
+   },
+   {
+    "now": 1700001500000,
+    "snapshot": {
+     "status": "paused",
+     "phaseIndex": 2,
+     "phase": {
+      "kind": "rest",
+      "durationMs": 10000,
+      "round": 1
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 2
+     },
+     "phaseElapsedMs": 3000,
+     "phaseRemainingMs": 7000,
+     "totalElapsedMs": 83000,
+     "totalRemainingMs": 267000,
+     "phaseProgress": 0.3,
+     "totalProgress": 0.23714285714285716
+    }
+   },
+   {
+    "now": 1700003600000,
+    "snapshot": {
+     "status": "paused",
+     "phaseIndex": 2,
+     "phase": {
+      "kind": "rest",
+      "durationMs": 10000,
+      "round": 1
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 2
+     },
+     "phaseElapsedMs": 3000,
+     "phaseRemainingMs": 7000,
+     "totalElapsedMs": 83000,
+     "totalRemainingMs": 267000,
+     "phaseProgress": 0.3,
+     "totalProgress": 0.23714285714285716
+    }
+   },
+   {
+    "now": 1700099999999,
+    "snapshot": {
+     "status": "paused",
+     "phaseIndex": 2,
+     "phase": {
+      "kind": "rest",
+      "durationMs": 10000,
+      "round": 1
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 20000,
+      "round": 2
+     },
+     "phaseElapsedMs": 3000,
+     "phaseRemainingMs": 7000,
+     "totalElapsedMs": 83000,
+     "totalRemainingMs": 267000,
+     "phaseProgress": 0.3,
+     "totalProgress": 0.23714285714285716
+    }
+   }
+  ]
+ },
+ {
+  "name": "hiit skipped twice",
+  "session": {
+   "routine": {
+    "id": "preset-hiit",
+    "name": "HIIT 40 / 20",
+    "spec": {
+     "type": "interval",
+     "warmupMs": 180000,
+     "workMs": 40000,
+     "restMs": 20000,
+     "rounds": 12,
+     "cooldownMs": 180000
+    }
+   },
+   "phases": [
+    {
+     "kind": "warmup",
+     "durationMs": 180000
+    },
+    {
+     "kind": "work",
+     "durationMs": 40000,
+     "round": 1
+    },
+    {
+     "kind": "rest",
+     "durationMs": 20000,
+     "round": 1
+    },
+    {
+     "kind": "work",
+     "durationMs": 40000,
+     "round": 2
+    },
+    {
+     "kind": "rest",
+     "durationMs": 20000,
+     "round": 2
+    },
+    {
+     "kind": "work",
+     "durationMs": 40000,
+     "round": 3
+    },
+    {
+     "kind": "rest",
+     "durationMs": 20000,
+     "round": 3
+    },
+    {
+     "kind": "work",
+     "durationMs": 40000,
+     "round": 4
+    },
+    {
+     "kind": "rest",
+     "durationMs": 20000,
+     "round": 4
+    },
+    {
+     "kind": "work",
+     "durationMs": 40000,
+     "round": 5
+    },
+    {
+     "kind": "rest",
+     "durationMs": 20000,
+     "round": 5
+    },
+    {
+     "kind": "work",
+     "durationMs": 40000,
+     "round": 6
+    },
+    {
+     "kind": "rest",
+     "durationMs": 20000,
+     "round": 6
+    },
+    {
+     "kind": "work",
+     "durationMs": 40000,
+     "round": 7
+    },
+    {
+     "kind": "rest",
+     "durationMs": 20000,
+     "round": 7
+    },
+    {
+     "kind": "work",
+     "durationMs": 40000,
+     "round": 8
+    },
+    {
+     "kind": "rest",
+     "durationMs": 20000,
+     "round": 8
+    },
+    {
+     "kind": "work",
+     "durationMs": 40000,
+     "round": 9
+    },
+    {
+     "kind": "rest",
+     "durationMs": 20000,
+     "round": 9
+    },
+    {
+     "kind": "work",
+     "durationMs": 40000,
+     "round": 10
+    },
+    {
+     "kind": "rest",
+     "durationMs": 20000,
+     "round": 10
+    },
+    {
+     "kind": "work",
+     "durationMs": 40000,
+     "round": 11
+    },
+    {
+     "kind": "rest",
+     "durationMs": 20000,
+     "round": 11
+    },
+    {
+     "kind": "work",
+     "durationMs": 40000,
+     "round": 12
+    },
+    {
+     "kind": "cooldown",
+     "durationMs": 180000
+    }
+   ],
+   "startedAt": 1700000000000,
+   "pausedAt": null,
+   "pausedTotalMs": 0,
+   "skippedMs": 214000,
+   "finishedAt": null
+  },
+  "cases": [
+   {
+    "now": 1700000000000,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 1,
+     "phase": {
+      "kind": "work",
+      "durationMs": 40000,
+      "round": 1
+     },
+     "next": {
+      "kind": "rest",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "phaseElapsedMs": 34000,
+     "phaseRemainingMs": 6000,
+     "totalElapsedMs": 214000,
+     "totalRemainingMs": 846000,
+     "phaseProgress": 0.85,
+     "totalProgress": 0.2018867924528302
+    }
+   },
+   {
+    "now": 1700000000001,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 1,
+     "phase": {
+      "kind": "work",
+      "durationMs": 40000,
+      "round": 1
+     },
+     "next": {
+      "kind": "rest",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "phaseElapsedMs": 34001,
+     "phaseRemainingMs": 5999,
+     "totalElapsedMs": 214001,
+     "totalRemainingMs": 845999,
+     "phaseProgress": 0.850025,
+     "totalProgress": 0.20188773584905662
+    }
+   },
+   {
+    "now": 1700000000999,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 1,
+     "phase": {
+      "kind": "work",
+      "durationMs": 40000,
+      "round": 1
+     },
+     "next": {
+      "kind": "rest",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "phaseElapsedMs": 34999,
+     "phaseRemainingMs": 5001,
+     "totalElapsedMs": 214999,
+     "totalRemainingMs": 845001,
+     "phaseProgress": 0.874975,
+     "totalProgress": 0.20282924528301888
+    }
+   },
+   {
+    "now": 1700000001000,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 1,
+     "phase": {
+      "kind": "work",
+      "durationMs": 40000,
+      "round": 1
+     },
+     "next": {
+      "kind": "rest",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "phaseElapsedMs": 35000,
+     "phaseRemainingMs": 5000,
+     "totalElapsedMs": 215000,
+     "totalRemainingMs": 845000,
+     "phaseProgress": 0.875,
+     "totalProgress": 0.2028301886792453
+    }
+   },
+   {
+    "now": 1700000059999,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 3,
+     "phase": {
+      "kind": "work",
+      "durationMs": 40000,
+      "round": 2
+     },
+     "next": {
+      "kind": "rest",
+      "durationMs": 20000,
+      "round": 2
+     },
+     "phaseElapsedMs": 33999,
+     "phaseRemainingMs": 6001,
+     "totalElapsedMs": 273999,
+     "totalRemainingMs": 786001,
+     "phaseProgress": 0.849975,
+     "totalProgress": 0.25848962264150943
+    }
+   },
+   {
+    "now": 1700000060000,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 3,
+     "phase": {
+      "kind": "work",
+      "durationMs": 40000,
+      "round": 2
+     },
+     "next": {
+      "kind": "rest",
+      "durationMs": 20000,
+      "round": 2
+     },
+     "phaseElapsedMs": 34000,
+     "phaseRemainingMs": 6000,
+     "totalElapsedMs": 274000,
+     "totalRemainingMs": 786000,
+     "phaseProgress": 0.85,
+     "totalProgress": 0.25849056603773585
+    }
+   },
+   {
+    "now": 1700000083500,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 4,
+     "phase": {
+      "kind": "rest",
+      "durationMs": 20000,
+      "round": 2
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 40000,
+      "round": 3
+     },
+     "phaseElapsedMs": 17500,
+     "phaseRemainingMs": 2500,
+     "totalElapsedMs": 297500,
+     "totalRemainingMs": 762500,
+     "phaseProgress": 0.875,
+     "totalProgress": 0.2806603773584906
+    }
+   },
+   {
+    "now": 1700000007333,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 2,
+     "phase": {
+      "kind": "rest",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 40000,
+      "round": 2
+     },
+     "phaseElapsedMs": 1333,
+     "phaseRemainingMs": 18667,
+     "totalElapsedMs": 221333,
+     "totalRemainingMs": 838667,
+     "phaseProgress": 0.06665,
+     "totalProgress": 0.20880471698113207
+    }
+   },
+   {
+    "now": 1700000014666,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 2,
+     "phase": {
+      "kind": "rest",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 40000,
+      "round": 2
+     },
+     "phaseElapsedMs": 8666,
+     "phaseRemainingMs": 11334,
+     "totalElapsedMs": 228666,
+     "totalRemainingMs": 831334,
+     "phaseProgress": 0.4333,
+     "totalProgress": 0.21572264150943396
+    }
+   },
+   {
+    "now": 1700000023249,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 2,
+     "phase": {
+      "kind": "rest",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 40000,
+      "round": 2
+     },
+     "phaseElapsedMs": 17249,
+     "phaseRemainingMs": 2751,
+     "totalElapsedMs": 237249,
+     "totalRemainingMs": 822751,
+     "phaseProgress": 0.86245,
+     "totalProgress": 0.2238198113207547
+    }
+   },
+   {
+    "now": 1700000023250,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 2,
+     "phase": {
+      "kind": "rest",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 40000,
+      "round": 2
+     },
+     "phaseElapsedMs": 17250,
+     "phaseRemainingMs": 2750,
+     "totalElapsedMs": 237250,
+     "totalRemainingMs": 822750,
+     "phaseProgress": 0.8625,
+     "totalProgress": 0.22382075471698112
+    }
+   },
+   {
+    "now": 1700001500000,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 24,
+     "phase": {
+      "kind": "cooldown",
+      "durationMs": 180000
+     },
+     "next": null,
+     "phaseElapsedMs": 180000,
+     "phaseRemainingMs": 0,
+     "totalElapsedMs": 1060000,
+     "totalRemainingMs": 0,
+     "phaseProgress": 1,
+     "totalProgress": 1
+    }
+   },
+   {
+    "now": 1700003600000,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 24,
+     "phase": {
+      "kind": "cooldown",
+      "durationMs": 180000
+     },
+     "next": null,
+     "phaseElapsedMs": 180000,
+     "phaseRemainingMs": 0,
+     "totalElapsedMs": 1060000,
+     "totalRemainingMs": 0,
+     "phaseProgress": 1,
+     "totalProgress": 1
+    }
+   },
+   {
+    "now": 1700099999999,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 24,
+     "phase": {
+      "kind": "cooldown",
+      "durationMs": 180000
+     },
+     "next": null,
+     "phaseElapsedMs": 180000,
+     "phaseRemainingMs": 0,
+     "totalElapsedMs": 1060000,
+     "totalRemainingMs": 0,
+     "phaseProgress": 1,
+     "totalProgress": 1
+    }
+   }
+  ]
+ },
+ {
+  "name": "hiit back after skip",
+  "session": {
+   "routine": {
+    "id": "preset-hiit",
+    "name": "HIIT 40 / 20",
+    "spec": {
+     "type": "interval",
+     "warmupMs": 180000,
+     "workMs": 40000,
+     "restMs": 20000,
+     "rounds": 12,
+     "cooldownMs": 180000
+    }
+   },
+   "phases": [
+    {
+     "kind": "warmup",
+     "durationMs": 180000
+    },
+    {
+     "kind": "work",
+     "durationMs": 40000,
+     "round": 1
+    },
+    {
+     "kind": "rest",
+     "durationMs": 20000,
+     "round": 1
+    },
+    {
+     "kind": "work",
+     "durationMs": 40000,
+     "round": 2
+    },
+    {
+     "kind": "rest",
+     "durationMs": 20000,
+     "round": 2
+    },
+    {
+     "kind": "work",
+     "durationMs": 40000,
+     "round": 3
+    },
+    {
+     "kind": "rest",
+     "durationMs": 20000,
+     "round": 3
+    },
+    {
+     "kind": "work",
+     "durationMs": 40000,
+     "round": 4
+    },
+    {
+     "kind": "rest",
+     "durationMs": 20000,
+     "round": 4
+    },
+    {
+     "kind": "work",
+     "durationMs": 40000,
+     "round": 5
+    },
+    {
+     "kind": "rest",
+     "durationMs": 20000,
+     "round": 5
+    },
+    {
+     "kind": "work",
+     "durationMs": 40000,
+     "round": 6
+    },
+    {
+     "kind": "rest",
+     "durationMs": 20000,
+     "round": 6
+    },
+    {
+     "kind": "work",
+     "durationMs": 40000,
+     "round": 7
+    },
+    {
+     "kind": "rest",
+     "durationMs": 20000,
+     "round": 7
+    },
+    {
+     "kind": "work",
+     "durationMs": 40000,
+     "round": 8
+    },
+    {
+     "kind": "rest",
+     "durationMs": 20000,
+     "round": 8
+    },
+    {
+     "kind": "work",
+     "durationMs": 40000,
+     "round": 9
+    },
+    {
+     "kind": "rest",
+     "durationMs": 20000,
+     "round": 9
+    },
+    {
+     "kind": "work",
+     "durationMs": 40000,
+     "round": 10
+    },
+    {
+     "kind": "rest",
+     "durationMs": 20000,
+     "round": 10
+    },
+    {
+     "kind": "work",
+     "durationMs": 40000,
+     "round": 11
+    },
+    {
+     "kind": "rest",
+     "durationMs": 20000,
+     "round": 11
+    },
+    {
+     "kind": "work",
+     "durationMs": 40000,
+     "round": 12
+    },
+    {
+     "kind": "cooldown",
+     "durationMs": 180000
+    }
+   ],
+   "startedAt": 1700000000000,
+   "pausedAt": null,
+   "pausedTotalMs": 0,
+   "skippedMs": 150000,
+   "finishedAt": null
+  },
+  "cases": [
+   {
+    "now": 1700000000000,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 180000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 40000,
+      "round": 1
+     },
+     "phaseElapsedMs": 150000,
+     "phaseRemainingMs": 30000,
+     "totalElapsedMs": 150000,
+     "totalRemainingMs": 910000,
+     "phaseProgress": 0.8333333333333334,
+     "totalProgress": 0.14150943396226415
+    }
+   },
+   {
+    "now": 1700000000001,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 180000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 40000,
+      "round": 1
+     },
+     "phaseElapsedMs": 150001,
+     "phaseRemainingMs": 29999,
+     "totalElapsedMs": 150001,
+     "totalRemainingMs": 909999,
+     "phaseProgress": 0.8333388888888889,
+     "totalProgress": 0.14151037735849056
+    }
+   },
+   {
+    "now": 1700000000999,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 180000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 40000,
+      "round": 1
+     },
+     "phaseElapsedMs": 150999,
+     "phaseRemainingMs": 29001,
+     "totalElapsedMs": 150999,
+     "totalRemainingMs": 909001,
+     "phaseProgress": 0.8388833333333333,
+     "totalProgress": 0.14245188679245283
+    }
+   },
+   {
+    "now": 1700000001000,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 180000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 40000,
+      "round": 1
+     },
+     "phaseElapsedMs": 151000,
+     "phaseRemainingMs": 29000,
+     "totalElapsedMs": 151000,
+     "totalRemainingMs": 909000,
+     "phaseProgress": 0.8388888888888889,
+     "totalProgress": 0.14245283018867924
+    }
+   },
+   {
+    "now": 1700000059999,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 1,
+     "phase": {
+      "kind": "work",
+      "durationMs": 40000,
+      "round": 1
+     },
+     "next": {
+      "kind": "rest",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "phaseElapsedMs": 29999,
+     "phaseRemainingMs": 10001,
+     "totalElapsedMs": 209999,
+     "totalRemainingMs": 850001,
+     "phaseProgress": 0.749975,
+     "totalProgress": 0.1981122641509434
+    }
+   },
+   {
+    "now": 1700000060000,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 1,
+     "phase": {
+      "kind": "work",
+      "durationMs": 40000,
+      "round": 1
+     },
+     "next": {
+      "kind": "rest",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "phaseElapsedMs": 30000,
+     "phaseRemainingMs": 10000,
+     "totalElapsedMs": 210000,
+     "totalRemainingMs": 850000,
+     "phaseProgress": 0.75,
+     "totalProgress": 0.19811320754716982
+    }
+   },
+   {
+    "now": 1700000083500,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 2,
+     "phase": {
+      "kind": "rest",
+      "durationMs": 20000,
+      "round": 1
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 40000,
+      "round": 2
+     },
+     "phaseElapsedMs": 13500,
+     "phaseRemainingMs": 6500,
+     "totalElapsedMs": 233500,
+     "totalRemainingMs": 826500,
+     "phaseProgress": 0.675,
+     "totalProgress": 0.22028301886792453
+    }
+   },
+   {
+    "now": 1700000007333,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 180000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 40000,
+      "round": 1
+     },
+     "phaseElapsedMs": 157333,
+     "phaseRemainingMs": 22667,
+     "totalElapsedMs": 157333,
+     "totalRemainingMs": 902667,
+     "phaseProgress": 0.8740722222222223,
+     "totalProgress": 0.14842735849056604
+    }
+   },
+   {
+    "now": 1700000014666,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 180000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 40000,
+      "round": 1
+     },
+     "phaseElapsedMs": 164666,
+     "phaseRemainingMs": 15334,
+     "totalElapsedMs": 164666,
+     "totalRemainingMs": 895334,
+     "phaseProgress": 0.9148111111111111,
+     "totalProgress": 0.15534528301886794
+    }
+   },
+   {
+    "now": 1700000023249,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 180000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 40000,
+      "round": 1
+     },
+     "phaseElapsedMs": 173249,
+     "phaseRemainingMs": 6751,
+     "totalElapsedMs": 173249,
+     "totalRemainingMs": 886751,
+     "phaseProgress": 0.9624944444444444,
+     "totalProgress": 0.16344245283018868
+    }
+   },
+   {
+    "now": 1700000023250,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "warmup",
+      "durationMs": 180000
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 40000,
+      "round": 1
+     },
+     "phaseElapsedMs": 173250,
+     "phaseRemainingMs": 6750,
+     "totalElapsedMs": 173250,
+     "totalRemainingMs": 886750,
+     "phaseProgress": 0.9625,
+     "totalProgress": 0.1634433962264151
+    }
+   },
+   {
+    "now": 1700001500000,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 24,
+     "phase": {
+      "kind": "cooldown",
+      "durationMs": 180000
+     },
+     "next": null,
+     "phaseElapsedMs": 180000,
+     "phaseRemainingMs": 0,
+     "totalElapsedMs": 1060000,
+     "totalRemainingMs": 0,
+     "phaseProgress": 1,
+     "totalProgress": 1
+    }
+   },
+   {
+    "now": 1700003600000,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 24,
+     "phase": {
+      "kind": "cooldown",
+      "durationMs": 180000
+     },
+     "next": null,
+     "phaseElapsedMs": 180000,
+     "phaseRemainingMs": 0,
+     "totalElapsedMs": 1060000,
+     "totalRemainingMs": 0,
+     "phaseProgress": 1,
+     "totalProgress": 1
+    }
+   },
+   {
+    "now": 1700099999999,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 24,
+     "phase": {
+      "kind": "cooldown",
+      "durationMs": 180000
+     },
+     "next": null,
+     "phaseElapsedMs": 180000,
+     "phaseRemainingMs": 0,
+     "totalElapsedMs": 1060000,
+     "totalRemainingMs": 0,
+     "phaseProgress": 1,
+     "totalProgress": 1
+    }
+   }
+  ]
+ },
+ {
+  "name": "pomodoro fresh",
+  "session": {
+   "routine": {
+    "id": "preset-pomodoro",
+    "name": "Pomodoro",
+    "spec": {
+     "type": "focus",
+     "focusMs": 1500000,
+     "shortBreakMs": 300000,
+     "longBreakMs": 900000,
+     "cycles": 4,
+     "longBreakEvery": 4
+    }
+   },
+   "phases": [
+    {
+     "kind": "focus",
+     "durationMs": 1500000,
+     "round": 1
+    },
+    {
+     "kind": "break",
+     "durationMs": 300000,
+     "round": 1
+    },
+    {
+     "kind": "focus",
+     "durationMs": 1500000,
+     "round": 2
+    },
+    {
+     "kind": "break",
+     "durationMs": 300000,
+     "round": 2
+    },
+    {
+     "kind": "focus",
+     "durationMs": 1500000,
+     "round": 3
+    },
+    {
+     "kind": "break",
+     "durationMs": 300000,
+     "round": 3
+    },
+    {
+     "kind": "focus",
+     "durationMs": 1500000,
+     "round": 4
+    }
+   ],
+   "startedAt": 1700000000000,
+   "pausedAt": null,
+   "pausedTotalMs": 0,
+   "skippedMs": 0,
+   "finishedAt": null
+  },
+  "cases": [
+   {
+    "now": 1700000000000,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "focus",
+      "durationMs": 1500000,
+      "round": 1
+     },
+     "next": {
+      "kind": "break",
+      "durationMs": 300000,
+      "round": 1
+     },
+     "phaseElapsedMs": 0,
+     "phaseRemainingMs": 1500000,
+     "totalElapsedMs": 0,
+     "totalRemainingMs": 6900000,
+     "phaseProgress": 0,
+     "totalProgress": 0
+    }
+   },
+   {
+    "now": 1700000000001,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "focus",
+      "durationMs": 1500000,
+      "round": 1
+     },
+     "next": {
+      "kind": "break",
+      "durationMs": 300000,
+      "round": 1
+     },
+     "phaseElapsedMs": 1,
+     "phaseRemainingMs": 1499999,
+     "totalElapsedMs": 1,
+     "totalRemainingMs": 6899999,
+     "phaseProgress": 6.666666666666667e-7,
+     "totalProgress": 1.4492753623188405e-7
+    }
+   },
+   {
+    "now": 1700000000999,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "focus",
+      "durationMs": 1500000,
+      "round": 1
+     },
+     "next": {
+      "kind": "break",
+      "durationMs": 300000,
+      "round": 1
+     },
+     "phaseElapsedMs": 999,
+     "phaseRemainingMs": 1499001,
+     "totalElapsedMs": 999,
+     "totalRemainingMs": 6899001,
+     "phaseProgress": 0.000666,
+     "totalProgress": 0.00014478260869565216
+    }
+   },
+   {
+    "now": 1700000001000,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "focus",
+      "durationMs": 1500000,
+      "round": 1
+     },
+     "next": {
+      "kind": "break",
+      "durationMs": 300000,
+      "round": 1
+     },
+     "phaseElapsedMs": 1000,
+     "phaseRemainingMs": 1499000,
+     "totalElapsedMs": 1000,
+     "totalRemainingMs": 6899000,
+     "phaseProgress": 0.0006666666666666666,
+     "totalProgress": 0.00014492753623188405
+    }
+   },
+   {
+    "now": 1700000059999,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "focus",
+      "durationMs": 1500000,
+      "round": 1
+     },
+     "next": {
+      "kind": "break",
+      "durationMs": 300000,
+      "round": 1
+     },
+     "phaseElapsedMs": 59999,
+     "phaseRemainingMs": 1440001,
+     "totalElapsedMs": 59999,
+     "totalRemainingMs": 6840001,
+     "phaseProgress": 0.03999933333333333,
+     "totalProgress": 0.008695507246376811
+    }
+   },
+   {
+    "now": 1700000060000,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "focus",
+      "durationMs": 1500000,
+      "round": 1
+     },
+     "next": {
+      "kind": "break",
+      "durationMs": 300000,
+      "round": 1
+     },
+     "phaseElapsedMs": 60000,
+     "phaseRemainingMs": 1440000,
+     "totalElapsedMs": 60000,
+     "totalRemainingMs": 6840000,
+     "phaseProgress": 0.04,
+     "totalProgress": 0.008695652173913044
+    }
+   },
+   {
+    "now": 1700000083500,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "focus",
+      "durationMs": 1500000,
+      "round": 1
+     },
+     "next": {
+      "kind": "break",
+      "durationMs": 300000,
+      "round": 1
+     },
+     "phaseElapsedMs": 83500,
+     "phaseRemainingMs": 1416500,
+     "totalElapsedMs": 83500,
+     "totalRemainingMs": 6816500,
+     "phaseProgress": 0.05566666666666667,
+     "totalProgress": 0.012101449275362318
+    }
+   },
+   {
+    "now": 1700000007333,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "focus",
+      "durationMs": 1500000,
+      "round": 1
+     },
+     "next": {
+      "kind": "break",
+      "durationMs": 300000,
+      "round": 1
+     },
+     "phaseElapsedMs": 7333,
+     "phaseRemainingMs": 1492667,
+     "totalElapsedMs": 7333,
+     "totalRemainingMs": 6892667,
+     "phaseProgress": 0.004888666666666667,
+     "totalProgress": 0.0010627536231884059
+    }
+   },
+   {
+    "now": 1700000014666,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "focus",
+      "durationMs": 1500000,
+      "round": 1
+     },
+     "next": {
+      "kind": "break",
+      "durationMs": 300000,
+      "round": 1
+     },
+     "phaseElapsedMs": 14666,
+     "phaseRemainingMs": 1485334,
+     "totalElapsedMs": 14666,
+     "totalRemainingMs": 6885334,
+     "phaseProgress": 0.009777333333333334,
+     "totalProgress": 0.0021255072463768118
+    }
+   },
+   {
+    "now": 1700000023249,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "focus",
+      "durationMs": 1500000,
+      "round": 1
+     },
+     "next": {
+      "kind": "break",
+      "durationMs": 300000,
+      "round": 1
+     },
+     "phaseElapsedMs": 23249,
+     "phaseRemainingMs": 1476751,
+     "totalElapsedMs": 23249,
+     "totalRemainingMs": 6876751,
+     "phaseProgress": 0.015499333333333334,
+     "totalProgress": 0.0033694202898550724
+    }
+   },
+   {
+    "now": 1700000023250,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "focus",
+      "durationMs": 1500000,
+      "round": 1
+     },
+     "next": {
+      "kind": "break",
+      "durationMs": 300000,
+      "round": 1
+     },
+     "phaseElapsedMs": 23250,
+     "phaseRemainingMs": 1476750,
+     "totalElapsedMs": 23250,
+     "totalRemainingMs": 6876750,
+     "phaseProgress": 0.0155,
+     "totalProgress": 0.0033695652173913043
+    }
+   },
+   {
+    "now": 1700001500000,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 1,
+     "phase": {
+      "kind": "break",
+      "durationMs": 300000,
+      "round": 1
+     },
+     "next": {
+      "kind": "focus",
+      "durationMs": 1500000,
+      "round": 2
+     },
+     "phaseElapsedMs": 0,
+     "phaseRemainingMs": 300000,
+     "totalElapsedMs": 1500000,
+     "totalRemainingMs": 5400000,
+     "phaseProgress": 0,
+     "totalProgress": 0.21739130434782608
+    }
+   },
+   {
+    "now": 1700003600000,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 4,
+     "phase": {
+      "kind": "focus",
+      "durationMs": 1500000,
+      "round": 3
+     },
+     "next": {
+      "kind": "break",
+      "durationMs": 300000,
+      "round": 3
+     },
+     "phaseElapsedMs": 0,
+     "phaseRemainingMs": 1500000,
+     "totalElapsedMs": 3600000,
+     "totalRemainingMs": 3300000,
+     "phaseProgress": 0,
+     "totalProgress": 0.5217391304347826
+    }
+   },
+   {
+    "now": 1700099999999,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 6,
+     "phase": {
+      "kind": "focus",
+      "durationMs": 1500000,
+      "round": 4
+     },
+     "next": null,
+     "phaseElapsedMs": 1500000,
+     "phaseRemainingMs": 0,
+     "totalElapsedMs": 6900000,
+     "totalRemainingMs": 0,
+     "phaseProgress": 1,
+     "totalProgress": 1
+    }
+   }
+  ]
+ },
+ {
+  "name": "deep work stopped",
+  "session": {
+   "routine": {
+    "id": "preset-deep-work",
+    "name": "Deep work",
+    "spec": {
+     "type": "focus",
+     "focusMs": 3000000,
+     "shortBreakMs": 600000,
+     "longBreakMs": 1200000,
+     "cycles": 3,
+     "longBreakEvery": 0
+    }
+   },
+   "phases": [
+    {
+     "kind": "focus",
+     "durationMs": 3000000,
+     "round": 1
+    },
+    {
+     "kind": "break",
+     "durationMs": 600000,
+     "round": 1
+    },
+    {
+     "kind": "focus",
+     "durationMs": 3000000,
+     "round": 2
+    },
+    {
+     "kind": "break",
+     "durationMs": 600000,
+     "round": 2
+    },
+    {
+     "kind": "focus",
+     "durationMs": 3000000,
+     "round": 3
+    }
+   ],
+   "startedAt": 1700000000000,
+   "pausedAt": null,
+   "pausedTotalMs": 0,
+   "skippedMs": 0,
+   "finishedAt": 1700001200000
+  },
+  "cases": [
+   {
+    "now": 1700000000000,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "focus",
+      "durationMs": 3000000,
+      "round": 1
+     },
+     "next": {
+      "kind": "break",
+      "durationMs": 600000,
+      "round": 1
+     },
+     "phaseElapsedMs": 1200000,
+     "phaseRemainingMs": 1800000,
+     "totalElapsedMs": 1200000,
+     "totalRemainingMs": 9000000,
+     "phaseProgress": 0.4,
+     "totalProgress": 0.11764705882352941
+    }
+   },
+   {
+    "now": 1700000000001,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "focus",
+      "durationMs": 3000000,
+      "round": 1
+     },
+     "next": {
+      "kind": "break",
+      "durationMs": 600000,
+      "round": 1
+     },
+     "phaseElapsedMs": 1200000,
+     "phaseRemainingMs": 1800000,
+     "totalElapsedMs": 1200000,
+     "totalRemainingMs": 9000000,
+     "phaseProgress": 0.4,
+     "totalProgress": 0.11764705882352941
+    }
+   },
+   {
+    "now": 1700000000999,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "focus",
+      "durationMs": 3000000,
+      "round": 1
+     },
+     "next": {
+      "kind": "break",
+      "durationMs": 600000,
+      "round": 1
+     },
+     "phaseElapsedMs": 1200000,
+     "phaseRemainingMs": 1800000,
+     "totalElapsedMs": 1200000,
+     "totalRemainingMs": 9000000,
+     "phaseProgress": 0.4,
+     "totalProgress": 0.11764705882352941
+    }
+   },
+   {
+    "now": 1700000001000,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "focus",
+      "durationMs": 3000000,
+      "round": 1
+     },
+     "next": {
+      "kind": "break",
+      "durationMs": 600000,
+      "round": 1
+     },
+     "phaseElapsedMs": 1200000,
+     "phaseRemainingMs": 1800000,
+     "totalElapsedMs": 1200000,
+     "totalRemainingMs": 9000000,
+     "phaseProgress": 0.4,
+     "totalProgress": 0.11764705882352941
+    }
+   },
+   {
+    "now": 1700000059999,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "focus",
+      "durationMs": 3000000,
+      "round": 1
+     },
+     "next": {
+      "kind": "break",
+      "durationMs": 600000,
+      "round": 1
+     },
+     "phaseElapsedMs": 1200000,
+     "phaseRemainingMs": 1800000,
+     "totalElapsedMs": 1200000,
+     "totalRemainingMs": 9000000,
+     "phaseProgress": 0.4,
+     "totalProgress": 0.11764705882352941
+    }
+   },
+   {
+    "now": 1700000060000,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "focus",
+      "durationMs": 3000000,
+      "round": 1
+     },
+     "next": {
+      "kind": "break",
+      "durationMs": 600000,
+      "round": 1
+     },
+     "phaseElapsedMs": 1200000,
+     "phaseRemainingMs": 1800000,
+     "totalElapsedMs": 1200000,
+     "totalRemainingMs": 9000000,
+     "phaseProgress": 0.4,
+     "totalProgress": 0.11764705882352941
+    }
+   },
+   {
+    "now": 1700000083500,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "focus",
+      "durationMs": 3000000,
+      "round": 1
+     },
+     "next": {
+      "kind": "break",
+      "durationMs": 600000,
+      "round": 1
+     },
+     "phaseElapsedMs": 1200000,
+     "phaseRemainingMs": 1800000,
+     "totalElapsedMs": 1200000,
+     "totalRemainingMs": 9000000,
+     "phaseProgress": 0.4,
+     "totalProgress": 0.11764705882352941
+    }
+   },
+   {
+    "now": 1700000007333,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "focus",
+      "durationMs": 3000000,
+      "round": 1
+     },
+     "next": {
+      "kind": "break",
+      "durationMs": 600000,
+      "round": 1
+     },
+     "phaseElapsedMs": 1200000,
+     "phaseRemainingMs": 1800000,
+     "totalElapsedMs": 1200000,
+     "totalRemainingMs": 9000000,
+     "phaseProgress": 0.4,
+     "totalProgress": 0.11764705882352941
+    }
+   },
+   {
+    "now": 1700000014666,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "focus",
+      "durationMs": 3000000,
+      "round": 1
+     },
+     "next": {
+      "kind": "break",
+      "durationMs": 600000,
+      "round": 1
+     },
+     "phaseElapsedMs": 1200000,
+     "phaseRemainingMs": 1800000,
+     "totalElapsedMs": 1200000,
+     "totalRemainingMs": 9000000,
+     "phaseProgress": 0.4,
+     "totalProgress": 0.11764705882352941
+    }
+   },
+   {
+    "now": 1700000023249,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "focus",
+      "durationMs": 3000000,
+      "round": 1
+     },
+     "next": {
+      "kind": "break",
+      "durationMs": 600000,
+      "round": 1
+     },
+     "phaseElapsedMs": 1200000,
+     "phaseRemainingMs": 1800000,
+     "totalElapsedMs": 1200000,
+     "totalRemainingMs": 9000000,
+     "phaseProgress": 0.4,
+     "totalProgress": 0.11764705882352941
+    }
+   },
+   {
+    "now": 1700000023250,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "focus",
+      "durationMs": 3000000,
+      "round": 1
+     },
+     "next": {
+      "kind": "break",
+      "durationMs": 600000,
+      "round": 1
+     },
+     "phaseElapsedMs": 1200000,
+     "phaseRemainingMs": 1800000,
+     "totalElapsedMs": 1200000,
+     "totalRemainingMs": 9000000,
+     "phaseProgress": 0.4,
+     "totalProgress": 0.11764705882352941
+    }
+   },
+   {
+    "now": 1700001500000,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "focus",
+      "durationMs": 3000000,
+      "round": 1
+     },
+     "next": {
+      "kind": "break",
+      "durationMs": 600000,
+      "round": 1
+     },
+     "phaseElapsedMs": 1200000,
+     "phaseRemainingMs": 1800000,
+     "totalElapsedMs": 1200000,
+     "totalRemainingMs": 9000000,
+     "phaseProgress": 0.4,
+     "totalProgress": 0.11764705882352941
+    }
+   },
+   {
+    "now": 1700003600000,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "focus",
+      "durationMs": 3000000,
+      "round": 1
+     },
+     "next": {
+      "kind": "break",
+      "durationMs": 600000,
+      "round": 1
+     },
+     "phaseElapsedMs": 1200000,
+     "phaseRemainingMs": 1800000,
+     "totalElapsedMs": 1200000,
+     "totalRemainingMs": 9000000,
+     "phaseProgress": 0.4,
+     "totalProgress": 0.11764705882352941
+    }
+   },
+   {
+    "now": 1700099999999,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "focus",
+      "durationMs": 3000000,
+      "round": 1
+     },
+     "next": {
+      "kind": "break",
+      "durationMs": 600000,
+      "round": 1
+     },
+     "phaseElapsedMs": 1200000,
+     "phaseRemainingMs": 1800000,
+     "totalElapsedMs": 1200000,
+     "totalRemainingMs": 9000000,
+     "phaseProgress": 0.4,
+     "totalProgress": 0.11764705882352941
+    }
+   }
+  ]
+ },
+ {
+  "name": "odd durations",
+  "session": {
+   "routine": {
+    "id": "odd",
+    "name": "Odd",
+    "spec": {
+     "type": "interval",
+     "warmupMs": 0,
+     "workMs": 7333,
+     "restMs": 0,
+     "rounds": 3,
+     "cooldownMs": 1250
+    }
+   },
+   "phases": [
+    {
+     "kind": "work",
+     "durationMs": 7333,
+     "round": 1
+    },
+    {
+     "kind": "work",
+     "durationMs": 7333,
+     "round": 2
+    },
+    {
+     "kind": "work",
+     "durationMs": 7333,
+     "round": 3
+    },
+    {
+     "kind": "cooldown",
+     "durationMs": 1250
+    }
+   ],
+   "startedAt": 1700000000000,
+   "pausedAt": null,
+   "pausedTotalMs": 0,
+   "skippedMs": 0,
+   "finishedAt": null
+  },
+  "cases": [
+   {
+    "now": 1700000000000,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "work",
+      "durationMs": 7333,
+      "round": 1
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 7333,
+      "round": 2
+     },
+     "phaseElapsedMs": 0,
+     "phaseRemainingMs": 7333,
+     "totalElapsedMs": 0,
+     "totalRemainingMs": 23249,
+     "phaseProgress": 0,
+     "totalProgress": 0
+    }
+   },
+   {
+    "now": 1700000000001,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "work",
+      "durationMs": 7333,
+      "round": 1
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 7333,
+      "round": 2
+     },
+     "phaseElapsedMs": 1,
+     "phaseRemainingMs": 7332,
+     "totalElapsedMs": 1,
+     "totalRemainingMs": 23248,
+     "phaseProgress": 0.00013636983499249966,
+     "totalProgress": 0.00004301260269258893
+    }
+   },
+   {
+    "now": 1700000000999,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "work",
+      "durationMs": 7333,
+      "round": 1
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 7333,
+      "round": 2
+     },
+     "phaseElapsedMs": 999,
+     "phaseRemainingMs": 6334,
+     "totalElapsedMs": 999,
+     "totalRemainingMs": 22250,
+     "phaseProgress": 0.13623346515750717,
+     "totalProgress": 0.04296959008989634
+    }
+   },
+   {
+    "now": 1700000001000,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 0,
+     "phase": {
+      "kind": "work",
+      "durationMs": 7333,
+      "round": 1
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 7333,
+      "round": 2
+     },
+     "phaseElapsedMs": 1000,
+     "phaseRemainingMs": 6333,
+     "totalElapsedMs": 1000,
+     "totalRemainingMs": 22249,
+     "phaseProgress": 0.13636983499249966,
+     "totalProgress": 0.04301260269258893
+    }
+   },
+   {
+    "now": 1700000059999,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 3,
+     "phase": {
+      "kind": "cooldown",
+      "durationMs": 1250
+     },
+     "next": null,
+     "phaseElapsedMs": 1250,
+     "phaseRemainingMs": 0,
+     "totalElapsedMs": 23249,
+     "totalRemainingMs": 0,
+     "phaseProgress": 1,
+     "totalProgress": 1
+    }
+   },
+   {
+    "now": 1700000060000,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 3,
+     "phase": {
+      "kind": "cooldown",
+      "durationMs": 1250
+     },
+     "next": null,
+     "phaseElapsedMs": 1250,
+     "phaseRemainingMs": 0,
+     "totalElapsedMs": 23249,
+     "totalRemainingMs": 0,
+     "phaseProgress": 1,
+     "totalProgress": 1
+    }
+   },
+   {
+    "now": 1700000083500,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 3,
+     "phase": {
+      "kind": "cooldown",
+      "durationMs": 1250
+     },
+     "next": null,
+     "phaseElapsedMs": 1250,
+     "phaseRemainingMs": 0,
+     "totalElapsedMs": 23249,
+     "totalRemainingMs": 0,
+     "phaseProgress": 1,
+     "totalProgress": 1
+    }
+   },
+   {
+    "now": 1700000007333,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 1,
+     "phase": {
+      "kind": "work",
+      "durationMs": 7333,
+      "round": 2
+     },
+     "next": {
+      "kind": "work",
+      "durationMs": 7333,
+      "round": 3
+     },
+     "phaseElapsedMs": 0,
+     "phaseRemainingMs": 7333,
+     "totalElapsedMs": 7333,
+     "totalRemainingMs": 15916,
+     "phaseProgress": 0,
+     "totalProgress": 0.3154114155447546
+    }
+   },
+   {
+    "now": 1700000014666,
+    "snapshot": {
+     "status": "running",
+     "phaseIndex": 2,
+     "phase": {
+      "kind": "work",
+      "durationMs": 7333,
+      "round": 3
+     },
+     "next": {
+      "kind": "cooldown",
+      "durationMs": 1250
+     },
+     "phaseElapsedMs": 0,
+     "phaseRemainingMs": 7333,
+     "totalElapsedMs": 14666,
+     "totalRemainingMs": 8583,
+     "phaseProgress": 0,
+     "totalProgress": 0.6308228310895092
+    }
+   },
+   {
+    "now": 1700000023249,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 3,
+     "phase": {
+      "kind": "cooldown",
+      "durationMs": 1250
+     },
+     "next": null,
+     "phaseElapsedMs": 1250,
+     "phaseRemainingMs": 0,
+     "totalElapsedMs": 23249,
+     "totalRemainingMs": 0,
+     "phaseProgress": 1,
+     "totalProgress": 1
+    }
+   },
+   {
+    "now": 1700000023250,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 3,
+     "phase": {
+      "kind": "cooldown",
+      "durationMs": 1250
+     },
+     "next": null,
+     "phaseElapsedMs": 1250,
+     "phaseRemainingMs": 0,
+     "totalElapsedMs": 23249,
+     "totalRemainingMs": 0,
+     "phaseProgress": 1,
+     "totalProgress": 1
+    }
+   },
+   {
+    "now": 1700001500000,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 3,
+     "phase": {
+      "kind": "cooldown",
+      "durationMs": 1250
+     },
+     "next": null,
+     "phaseElapsedMs": 1250,
+     "phaseRemainingMs": 0,
+     "totalElapsedMs": 23249,
+     "totalRemainingMs": 0,
+     "phaseProgress": 1,
+     "totalProgress": 1
+    }
+   },
+   {
+    "now": 1700003600000,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 3,
+     "phase": {
+      "kind": "cooldown",
+      "durationMs": 1250
+     },
+     "next": null,
+     "phaseElapsedMs": 1250,
+     "phaseRemainingMs": 0,
+     "totalElapsedMs": 23249,
+     "totalRemainingMs": 0,
+     "phaseProgress": 1,
+     "totalProgress": 1
+    }
+   },
+   {
+    "now": 1700099999999,
+    "snapshot": {
+     "status": "finished",
+     "phaseIndex": 3,
+     "phase": {
+      "kind": "cooldown",
+      "durationMs": 1250
+     },
+     "next": null,
+     "phaseElapsedMs": 1250,
+     "phaseRemainingMs": 0,
+     "totalElapsedMs": 23249,
+     "totalRemainingMs": 0,
+     "phaseProgress": 1,
+     "totalProgress": 1
+    }
+   }
+  ]
+ }
+]
