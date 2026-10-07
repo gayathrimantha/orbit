@@ -1,4 +1,10 @@
-export type PhaseKind = 'warmup' | 'work' | 'rest' | 'cooldown' | 'focus' | 'break';
+export type PhaseKind =
+  | 'warmup'
+  | 'work'
+  | 'rest'
+  | 'cooldown'
+  | 'focus'
+  | 'break';
 
 export interface Phase {
   kind: PhaseKind;

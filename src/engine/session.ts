@@ -118,7 +118,11 @@ export function upcomingBoundaries(
   s.phases.forEach((p, i) => {
     t += p.durationMs;
     if (t > elapsed) {
-      out.push({ at: origin + t, phase: s.phases[i + 1] ?? null, index: i + 1 });
+      out.push({
+        at: origin + t,
+        phase: s.phases[i + 1] ?? null,
+        index: i + 1,
+      });
     }
   });
   return out;

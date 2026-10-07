@@ -1,97 +1,103 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Cadence
 
-# Getting Started
+An interval and focus timer for iOS and Android, with companion apps for
+Apple Watch and Wear OS.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+Workouts (Tabata, HIIT, custom intervals) and focus sessions (Pomodoro, deep
+work) share one engine. Start on the phone, glance at the watch, pause from
+either. The timer is computed from the clock, so it never drifts, and it
+survives the app being killed mid-session.
 
-## Step 1: Start Metro
+## Status
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+| Surface | State |
+|---|---|
+| Timer engine | Done, fully tested |
+| iOS and Android app | Done: routines, editor, live timer, weekly summary |
+| Apple Watch (SwiftUI) | In progress |
+| Wear OS (Compose) | In progress |
+| Background alerts | Planned: scheduled local notifications at phase changes |
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## How it works
 
-```sh
-# Using npm
-npm start
+### Sessions are timestamps, not ticks
 
-# OR using Yarn
-yarn start
+Most timers count down by decrementing a number once a second. That drifts
+whenever a frame is late, stops when the OS suspends the app, and can't be
+shared with another device without streaming every tick.
+
+Cadence never counts. A session is a small immutable record:
+
+```ts
+interface Session {
+  routine: Routine;
+  phases: Phase[];
+  startedAt: number;      // wall clock
+  pausedAt: number | null;
+  pausedTotalMs: number;
+  skippedMs: number;      // skip and back move along the timeline
+  finishedAt: number | null;
+}
 ```
 
-## Step 2: Build and run your app
+Everything on screen is derived from it with one pure function,
+`snapshot(session, now)`: the current phase, time left, round, progress,
+what's next. The render loop only decides how often to repaint; it never
+changes state. That gives three properties for free:
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+- **No drift.** A late frame shows the right time, it just shows it late.
+- **Crash-safe.** The record is persisted on every change. Kill the app
+  mid-round, reopen it, and the timer is exactly where it should be. If the
+  routine ended while the app was closed, it is recorded as finished at the
+  precise moment it ended, not when the app reopened.
+- **Cheap to sync.** A watch receives the same record once, after each
+  change, and renders the countdown locally. No per-second messages, no
+  battery cost, and both screens always agree.
 
-### Android
+`upcomingBoundaries(session, now)` returns the wall-clock time of every
+remaining phase change, which is what background notifications and haptics
+are scheduled from.
 
-```sh
-# Using npm
-npm run android
+### Pause, skip and back are arithmetic
 
-# OR using Yarn
-yarn android
+- Pause records `pausedAt`; resume adds the gap to `pausedTotalMs`.
+- Skip adds the rest of the current phase to `skippedMs`.
+- Back rewinds to the start of the phase, or to the previous phase if pressed
+  within two seconds of a change, like a music player.
+
+Every operation is a pure `(session, now) => session` function, so the whole
+engine is tested without fake timers. See
+[`src/engine/__tests__`](src/engine/__tests__/engine.test.ts).
+
+## Project layout
+
+```
+src/
+  engine/        Pure TypeScript: routine expansion, validation, session maths
+  screens/       Home, Editor, Timer
+  components/    Ring, TimelineBar, Icon
+  store.ts       Zustand store, persistence, history
+  theme.ts       Design tokens: colour per phase, spacing, type scale
+ios/             iOS app (and Apple Watch target)
+android/         Android app (and Wear OS module)
 ```
 
-### iOS
+## Running it
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+Requires Node 22, Xcode 16+ and Android Studio.
 
 ```sh
-bundle install
+npm install
+cd ios && bundle install && bundle exec pod install && cd ..
+npm run ios        # or: npm run android
+npm test           # engine + smoke tests
 ```
 
-Then, and every time you update your native dependencies, run:
+## Stack
 
-```sh
-bundle exec pod install
-```
+React Native 0.87 (New Architecture) · TypeScript · Zustand ·
+react-native-svg · SwiftUI · Jetpack Compose for Wear OS
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+## License
 
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+MIT

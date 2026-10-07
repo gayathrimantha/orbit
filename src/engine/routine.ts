@@ -14,7 +14,8 @@ function expandInterval(s: IntervalSpec): Phase[] {
       phases.push({ kind: 'rest', durationMs: s.restMs, round });
     }
   }
-  if (s.cooldownMs > 0) phases.push({ kind: 'cooldown', durationMs: s.cooldownMs });
+  if (s.cooldownMs > 0)
+    phases.push({ kind: 'cooldown', durationMs: s.cooldownMs });
   return phases;
 }
 
