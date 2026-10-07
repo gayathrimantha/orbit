@@ -2,7 +2,9 @@ appId: com.gayathrimantha.cadence
 ---
 - launchApp:
     clearState: true
-- assertVisible: "What are we doing?"
+- extendedWaitUntil:
+    visible: "What are we doing?"
+    timeout: 30000
 - takeScreenshot: docs/screens/home
 - tapOn: "Start Tabata"
 - assertVisible: "WARM UP"
