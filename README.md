@@ -28,7 +28,7 @@ survives the app being killed mid-session.
 | Engine in Swift and Kotlin | Done, verified against the TypeScript engine |
 | Apple Watch (SwiftUI) | Live countdown, controls, phase haptics. Phone to watch sync verified on simulator |
 | Wear OS (Compose) | Live countdown, controls, phase haptics. UI verified on emulator; phone link needs a paired device |
-| Background alerts | Planned: scheduled local notifications at phase changes |
+| Background alerts | Done: each phase change is a scheduled local notification (exact alarms on Android). Verified on iOS |
 
 ## How it works
 
@@ -117,7 +117,7 @@ src/
   theme.ts       Design tokens: colour per phase, spacing, type scale
 fixtures/        Shared engine test cases, generated from the TypeScript engine
 native/swift/    Swift engine package (used by the watchOS app)
-watch/           Apple Watch app (SwiftUI); scripts/add-watch-target.rb wires it into Xcode
+watch/           Apple Watch app (SwiftUI); scripts/configure-xcode.rb wires it into Xcode
 android/engine/  Kotlin engine module (used by the Wear OS app)
 android/wear/    Wear OS app (Jetpack Compose), linked to the phone over the Data Layer
 e2e/             Maestro end-to-end flows

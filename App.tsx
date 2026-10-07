@@ -8,6 +8,7 @@ import { EditorScreen } from './src/screens/EditorScreen';
 import { HomeScreen } from './src/screens/HomeScreen';
 import { TimerScreen } from './src/screens/TimerScreen';
 import { useStore } from './src/store';
+import { startPhaseAlerts } from './src/alerts';
 import { startWatchSync } from './src/watch';
 import { color } from './src/theme';
 
@@ -26,7 +27,15 @@ export default function App() {
     hydrate();
   }, [hydrate]);
 
-  useEffect(() => (ready ? startWatchSync() : undefined), [ready]);
+  useEffect(() => {
+    if (!ready) return;
+    const stopWatch = startWatchSync();
+    const stopAlerts = startPhaseAlerts();
+    return () => {
+      stopWatch();
+      stopAlerts();
+    };
+  }, [ready]);
 
   return (
     <SafeAreaProvider>

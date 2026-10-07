@@ -1,0 +1,19 @@
+# The next phase is announced by a local notification while the app is in
+# the background. Takes about 25 seconds: it waits out a real 20 second phase.
+appId: com.gayathrimantha.cadence
+---
+- launchApp:
+    clearState: true
+    permissions:
+      notifications: allow
+- extendedWaitUntil:
+    visible: "What are we doing?"
+    timeout: 30000
+- tapOn: "Start Tabata"
+- tapOn: "Skip"
+- assertVisible: "WORK"
+- pressKey: Home
+- extendedWaitUntil:
+    visible: "Rest · Round 1 of 8"
+    timeout: 30000
+- takeScreenshot: docs/screens/background-alert

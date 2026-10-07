@@ -1,14 +1,11 @@
 package com.gayathrimantha.cadence
 
 import android.util.Log
-import com.facebook.react.ReactPackage
 import com.facebook.react.bridge.Arguments
-import com.facebook.react.bridge.NativeModule
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.bridge.ReactContextBaseJavaModule
 import com.facebook.react.bridge.ReactMethod
 import com.facebook.react.modules.core.DeviceEventManagerModule
-import com.facebook.react.uimanager.ViewManager
 import com.google.android.gms.wearable.MessageClient
 import com.google.android.gms.wearable.MessageEvent
 import com.google.android.gms.wearable.PutDataMapRequest
@@ -77,12 +74,4 @@ class WatchBridgeModule(private val context: ReactApplicationContext) :
         const val SESSION_PATH = "/cadence/session"
         const val CONTROL_PATH = "/cadence/control"
     }
-}
-
-class WatchBridgePackage : ReactPackage {
-    override fun createNativeModules(context: ReactApplicationContext): List<NativeModule> =
-        listOf(WatchBridgeModule(context))
-
-    override fun createViewManagers(context: ReactApplicationContext): List<ViewManager<*, *>> =
-        emptyList()
 }

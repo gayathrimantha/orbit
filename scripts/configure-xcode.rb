@@ -1,7 +1,7 @@
-# Adds the Apple Watch app and the phone-side WatchBridge to the Xcode project.
+# Adds the Apple Watch app and the phone-side native modules to the Xcode project.
 # Idempotent: re-running leaves an already-configured project unchanged.
 #
-#   cd ios && bundle exec ruby ../scripts/add-watch-target.rb
+#   cd ios && bundle exec ruby ../scripts/configure-xcode.rb
 
 require 'xcodeproj'
 
@@ -16,9 +16,9 @@ def ensure_file(group, path, target)
   ref
 end
 
-# Phone side: the native module the JS store talks to.
+# Phone side: native modules the JS layer talks to.
 app_group = project.main_group['Cadence']
-%w[WatchBridge.swift WatchBridge.m].each do |name|
+%w[WatchBridge.swift WatchBridge.m PhaseAlerts.swift PhaseAlerts.m].each do |name|
   ensure_file(app_group, File.join(ROOT, 'ios/Cadence', name), app)
 end
 
@@ -69,4 +69,4 @@ unless embed.files_references.include?(watch.product_reference)
 end
 
 project.save
-puts 'Watch target configured.'
+puts 'Xcode project configured.'
