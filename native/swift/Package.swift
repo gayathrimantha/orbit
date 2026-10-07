@@ -7,10 +7,6 @@ let package = Package(
   products: [.library(name: "OrbitEngine", targets: ["OrbitEngine"])],
   targets: [
     .target(name: "OrbitEngine"),
-    .testTarget(
-      name: "OrbitEngineTests",
-      dependencies: ["OrbitEngine"],
-      resources: [.copy("engine.json")]
-    ),
+    .testTarget(name: "OrbitEngineTests", dependencies: ["OrbitEngine"]),
   ]
 )

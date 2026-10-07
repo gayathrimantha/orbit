@@ -13,9 +13,17 @@ final class FixtureTests: XCTestCase {
     let cases: [Case]
   }
 
+  /// Read straight from the repo so all three engines test against one file.
+  private func loadFixtures() throws -> [Fixture] {
+    let url = URL(fileURLWithPath: #filePath)
+      .deletingLastPathComponent()
+      .appendingPathComponent("../../../../fixtures/engine.json")
+      .standardizedFileURL
+    return try JSONDecoder().decode([Fixture].self, from: Data(contentsOf: url))
+  }
+
   func testMatchesTypeScriptEngine() throws {
-    let url = try XCTUnwrap(Bundle.module.url(forResource: "engine", withExtension: "json"))
-    let fixtures = try JSONDecoder().decode([Fixture].self, from: Data(contentsOf: url))
+    let fixtures = try loadFixtures()
     XCTAssertFalse(fixtures.isEmpty)
     for f in fixtures {
       for c in f.cases {
@@ -27,9 +35,7 @@ final class FixtureTests: XCTestCase {
   }
 
   func testPauseResumeSkipMirrorTypeScript() throws {
-    let url = try XCTUnwrap(Bundle.module.url(forResource: "engine", withExtension: "json"))
-    let fresh = try JSONDecoder().decode([Fixture].self, from: Data(contentsOf: url))
-      .first { $0.name == "tabata fresh" }!.session
+    let fresh = try loadFixtures().first { $0.name == "tabata fresh" }!.session
     let t0 = fresh.startedAt
 
     let paused = Engine.pause(fresh, now: t0 + 83_000)
