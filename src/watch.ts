@@ -1,4 +1,4 @@
-import { NativeEventEmitter, NativeModules, Platform } from 'react-native';
+import { NativeEventEmitter, NativeModules } from 'react-native';
 import { useStore } from './store';
 
 type WatchControl = {
@@ -13,7 +13,7 @@ const ACTIONS = new Set(['pause', 'resume', 'skip', 'back']);
  * protocol: the watch renders it locally, so nothing is sent per tick.
  */
 export function startWatchSync(): () => void {
-  const bridge = Platform.OS === 'ios' ? NativeModules.WatchBridge : null;
+  const bridge = NativeModules.WatchBridge;
   if (!bridge) return () => {};
 
   const send = () => {

@@ -16,6 +16,7 @@ survives the app being killed mid-session.
 </p>
 <p>
   <img src="docs/screens/watch-work.png" width="30%" alt="Apple Watch during a work phase">
+  <img src="docs/screens/wear-work.png" width="30%" alt="Wear OS during a work phase">
 </p>
 
 ## Status
@@ -26,7 +27,7 @@ survives the app being killed mid-session.
 | iOS and Android app | Done: routines, editor, live timer, weekly summary |
 | Engine in Swift and Kotlin | Done, verified against the TypeScript engine |
 | Apple Watch (SwiftUI) | Live countdown, controls, phase haptics. Phone to watch sync verified on simulator |
-| Wear OS (Compose) | In progress |
+| Wear OS (Compose) | Live countdown, controls, phase haptics. UI verified on emulator; phone link needs a paired device |
 | Background alerts | Planned: scheduled local notifications at phase changes |
 
 ## How it works
@@ -118,6 +119,7 @@ fixtures/        Shared engine test cases, generated from the TypeScript engine
 native/swift/    Swift engine package (used by the watchOS app)
 watch/           Apple Watch app (SwiftUI); scripts/add-watch-target.rb wires it into Xcode
 android/engine/  Kotlin engine module (used by the Wear OS app)
+android/wear/    Wear OS app (Jetpack Compose), linked to the phone over the Data Layer
 e2e/             Maestro end-to-end flows
 ios/             iOS app (and Apple Watch target)
 android/         Android app (and Wear OS module)
