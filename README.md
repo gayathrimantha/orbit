@@ -2,6 +2,8 @@
 
 # Orbit
 
+[![CI](https://github.com/gayathrimantha/orbit/actions/workflows/ci.yml/badge.svg)](https://github.com/gayathrimantha/orbit/actions/workflows/ci.yml)
+
 An interval and focus timer for iOS and Android, with companion apps for
 Apple Watch and Wear OS.
 
