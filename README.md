@@ -1,3 +1,5 @@
+<img src="assets/icon.svg" width="96" alt="Cadence app icon">
+
 # Cadence
 
 An interval and focus timer for iOS and Android, with companion apps for
@@ -17,6 +19,7 @@ survives the app being killed mid-session.
 <p>
   <img src="docs/screens/watch-work.png" width="30%" alt="Apple Watch during a work phase">
   <img src="docs/screens/wear-work.png" width="30%" alt="Wear OS during a work phase">
+  <img src="docs/screens/background-alert.png" width="30%" alt="Phase alert arriving while the app is in the background">
 </p>
 
 ## Status
@@ -120,7 +123,8 @@ native/swift/    Swift engine package (used by the watchOS app)
 watch/           Apple Watch app (SwiftUI); scripts/configure-xcode.rb wires it into Xcode
 android/engine/  Kotlin engine module (used by the Wear OS app)
 android/wear/    Wear OS app (Jetpack Compose), linked to the phone over the Data Layer
-e2e/             Maestro end-to-end flows
+e2e/             Maestro end-to-end flows (tour, background alert)
+assets/          Icon source; scripts/gen-icons.py renders every platform's set
 ios/             iOS app (and Apple Watch target)
 android/         Android app (and Wear OS module)
 ```

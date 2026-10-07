@@ -16,6 +16,7 @@
 		7317033146D86D1CF2295290 /* CadenceWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C45D20411E88BC8F2A3DC856 /* CadenceWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		787E075F8E6A1D3D111996F1 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		7B9CF1111B58633D7FF5C545 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A558D2D75F1204E3A0571D6D /* Assets.xcassets */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		912514DFC243AB4259B27A20 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BF915E2526ECDA37349039 /* TimerView.swift */; };
 		9975231832EF5A39126B8119 /* PhoneLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE62934FB5EC9AFF62EDB29 /* PhoneLink.swift */; };
@@ -67,6 +68,7 @@
 		70CD75893CB41AC099BB4C2E /* WatchBridge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WatchBridge.swift; path = Cadence/WatchBridge.swift; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Cadence/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Cadence/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A558D2D75F1204E3A0571D6D /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9BF915E2526ECDA37349039 /* TimerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		C45D20411E88BC8F2A3DC856 /* CadenceWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CadenceWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04B5D28BF806BC001DF988E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -143,6 +145,7 @@
 				22E065FDC493EB7B4ED3E086 /* IdleView.swift */,
 				2BE62934FB5EC9AFF62EDB29 /* PhoneLink.swift */,
 				B9BF915E2526ECDA37349039 /* TimerView.swift */,
+				A558D2D75F1204E3A0571D6D /* Assets.xcassets */,
 			);
 			name = CadenceWatch;
 			path = ../watch/CadenceWatch;
@@ -279,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B9CF1111B58633D7FF5C545 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

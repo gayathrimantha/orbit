@@ -51,6 +51,13 @@ watch_group = project.main_group['CadenceWatch'] ||
 Dir[File.join(ROOT, 'watch/CadenceWatch/*.swift')].sort.each do |path|
   ensure_file(watch_group, path, watch)
 end
+catalog_path = File.join(ROOT, 'watch/CadenceWatch/Assets.xcassets')
+catalog = watch_group.files.find { |f| f.real_path.to_s == catalog_path } ||
+          watch_group.new_reference(catalog_path)
+unless watch.resources_build_phase.files_references.include?(catalog)
+  watch.resources_build_phase.add_file_reference(catalog)
+end
+
 engine_group = project.main_group['CadenceEngine'] ||
                project.main_group.new_group('CadenceEngine', File.join(ROOT, 'native/swift/Sources/CadenceEngine'))
 ensure_file(engine_group, File.join(ROOT, 'native/swift/Sources/CadenceEngine/Engine.swift'), watch)
