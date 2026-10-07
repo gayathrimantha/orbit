@@ -3,13 +3,13 @@ apply plugin: "org.jetbrains.kotlin.android"
 apply plugin: "org.jetbrains.kotlin.plugin.compose"
 
 android {
-    namespace "com.gayathrimantha.cadence.wear"
+    namespace "com.gayathrimantha.orbit.wear"
     compileSdk rootProject.ext.compileSdkVersion
 
     defaultConfig {
         // Same application id and signing key as the phone app: the Wearable
         // Data Layer only connects apps that match on both.
-        applicationId "com.gayathrimantha.cadence"
+        applicationId "com.gayathrimantha.orbit"
         minSdk 30
         targetSdk 34
         versionCode 1

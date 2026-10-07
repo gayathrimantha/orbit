@@ -2,14 +2,14 @@
 import PackageDescription
 
 let package = Package(
-  name: "CadenceEngine",
+  name: "OrbitEngine",
   platforms: [.macOS(.v13), .iOS(.v15), .watchOS(.v9)],
-  products: [.library(name: "CadenceEngine", targets: ["CadenceEngine"])],
+  products: [.library(name: "OrbitEngine", targets: ["OrbitEngine"])],
   targets: [
-    .target(name: "CadenceEngine"),
+    .target(name: "OrbitEngine"),
     .testTarget(
-      name: "CadenceEngineTests",
-      dependencies: ["CadenceEngine"],
+      name: "OrbitEngineTests",
+      dependencies: ["OrbitEngine"],
       resources: [.copy("engine.json")]
     ),
   ]

@@ -43,9 +43,9 @@ interface State {
 }
 
 const KEYS = {
-  routines: 'cadence.routines.v1',
-  session: 'cadence.session.v1',
-  history: 'cadence.history.v1',
+  routines: 'orbit.routines.v1',
+  session: 'orbit.session.v1',
+  history: 'orbit.history.v1',
 } as const;
 
 const HISTORY_LIMIT = 500;

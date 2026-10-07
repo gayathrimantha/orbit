@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { AppState } from 'react-native';
 
 /**
- * Re-renders on a steady cadence while `active`. The interval only drives
+ * Re-renders at a steady interval while `active`. The interval only drives
  * repaints; displayed values are always computed from Date.now(), so a late
  * or dropped tick can never make the timer drift.
  */

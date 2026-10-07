@@ -43,7 +43,7 @@ export function HomeScreen({ navigation }: ScreenProps<'Home'>) {
           paddingHorizontal: space.xl,
         }}
       >
-        <Text style={styles.brand}>CADENCE</Text>
+        <Text style={styles.brand}>ORBIT</Text>
         <Text style={styles.title}>What are we doing?</Text>
         <WeekSummary history={history} />
 

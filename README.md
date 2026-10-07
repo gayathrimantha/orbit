@@ -1,6 +1,6 @@
-<img src="assets/icon.svg" width="96" alt="Cadence app icon">
+<img src="assets/icon.svg" width="96" alt="Orbit app icon">
 
-# Cadence
+# Orbit
 
 An interval and focus timer for iOS and Android, with companion apps for
 Apple Watch and Wear OS.
@@ -41,7 +41,7 @@ Most timers count down by decrementing a number once a second. That drifts
 whenever a frame is late, stops when the OS suspends the app, and can't be
 shared with another device without streaming every tick.
 
-Cadence never counts. A session is a small immutable record:
+Orbit never counts. A session is a small immutable record:
 
 ```ts
 interface Session {

@@ -1,4 +1,4 @@
-"""Draws the Cadence icon and writes every platform's icon set from it.
+"""Draws the Orbit icon and writes every platform's icon set from it.
 
 The icon is the app's timer ring: a dim track with a warm depleting arc.
 One drawing, three layers (background, ring, both), so each platform gets
@@ -118,9 +118,9 @@ def main():
     fore = svg(ring(scale=0.86))
 
     (ROOT / "assets/icon.svg").write_text(full)
-    asset_catalog(ROOT / "ios/Cadence/Images.xcassets/AppIcon.appiconset", "ios", full)
-    asset_catalog(ROOT / "watch/CadenceWatch/Assets.xcassets/AppIcon.appiconset", "watchos", full)
-    (ROOT / "watch/CadenceWatch/Assets.xcassets/Contents.json").write_text(
+    asset_catalog(ROOT / "ios/Orbit/Images.xcassets/AppIcon.appiconset", "ios", full)
+    asset_catalog(ROOT / "watch/OrbitWatch/Assets.xcassets/AppIcon.appiconset", "watchos", full)
+    (ROOT / "watch/OrbitWatch/Assets.xcassets/Contents.json").write_text(
         json.dumps({"info": {"author": "xcode", "version": 1}}, indent=2) + "\n"
     )
     android(ROOT / "android/app/src/main/res", full, back, fore)

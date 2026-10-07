@@ -1,4 +1,4 @@
-appId: com.gayathrimantha.cadence
+appId: com.gayathrimantha.orbit
 ---
 - launchApp:
     clearState: true
