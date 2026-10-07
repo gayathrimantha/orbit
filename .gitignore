@@ -73,3 +73,10 @@ yarn-error.log
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Swift package build output
+native/swift/.build/
+native/swift/.swiftpm/
+
+# Kotlin
+.kotlin/
